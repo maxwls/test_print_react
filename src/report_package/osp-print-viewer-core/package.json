@@ -1,0 +1,18 @@
+{
+  "name": "osp-print-viewer-core",
+  "version": "1.0.8",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "osp-print-report-core": "^1.0.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://maven.openserver.cn:8090/repository/npm-release/"
+  }
+}

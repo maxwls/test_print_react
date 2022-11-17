@@ -1,0 +1,1 @@
+declare module 'osp-print-designer-core';

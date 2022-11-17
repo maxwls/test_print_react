@@ -1,0 +1,17 @@
+{
+  "name": "osp-print-report-core",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+
+  },
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://maven.openserver.cn:8090/repository/npm-release/"
+  }
+}

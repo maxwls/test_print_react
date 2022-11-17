@@ -53,7 +53,7 @@ const App = () => {
     setActiveKey(newActiveKey);
   };
 
-  const onEdit = (targetKey) => {
+  const onEdit = (targetKey, action) => {
     if (action === 'add') {
       add();
     } else {
