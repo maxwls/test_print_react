@@ -1,0 +1,8936 @@
+.stiDesignerToolBar {
+  background-color: #0081cc;
+}
+
+.stiDesignerToolButton_Mouse {
+  background-color: #0081cc;
+}
+
+.stiDesignerStatusPanel {
+  background-color: #0081cc;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #e8e8e8;
+  overflow: hidden;
+}
+p {
+  margin: 0;
+}
+.model {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  display: none;
+}
+.model .savainfo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -115px 0 0 -143px;
+  background-color: #ffffff;
+  border: 1px solid #19478a;
+  color: #444444;
+  display: none;
+}
+.model .savainfo .close {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px dotted #c6c6c6;
+}
+.model .savainfo .close i {
+  float: right;
+  font-style: normal;
+  width: 30px;
+  text-align: center;
+  color: #666666;
+  cursor: pointer;
+}
+.model .savainfo .close i:hover {
+  color: #000000;
+}
+.model .savainfo .form {
+  padding: 20px;
+}
+.model .savainfo .line {
+  height: 34px;
+  line-height: 34px;
+}
+.model .savainfo .line .mandatory {
+  float: left;
+  width: 10px;
+  color: red;
+}
+.model .savainfo .line span {
+  float: left;
+  width: 50px;
+}
+.model .savainfo .line input {
+  float: left;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+  width: 180px;
+}
+.model .savainfo .error {
+  color: #ff0000;
+  font-size: 12px;
+  line-height: 30px;
+  height: 30px;
+  padding-left: 50px;
+  visibility: hidden;
+}
+.model .btn {
+  height: 28px;
+}
+.model .btn span {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  text-align: center;
+  height: 100%;
+}
+.model .btn i {
+  display: inline-block;
+  font-style: normal;
+  cursor: pointer;
+  width: 80px;
+  border: 1px solid #ababab;
+  font-size: 12px;
+  height: 26px;
+  line-height: 26px;
+}
+.model .btn span i:hover {
+  background-color: #d5e1f2;
+  border: 1px solid #a3dbe3;
+}
+/* 提示信息弹窗 */
+.tips {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #ffffff;
+  border: 1px solid #19478a;
+  color: #444444;
+  width: 442px;
+  margin: -65px 0 0 -222px;
+  display: none;
+}
+.model .title {
+  line-height: 28px;
+  text-align: center;
+  position: relative;
+}
+.model .title span {
+  display: inline-block;
+  width: 100%;
+  font-size: 13px;
+  color: #19478a;
+  font-weight: 700;
+}
+.model .title i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+.model .title i:hover {
+  background-color: #d5e1f2;
+}
+.tips .content {
+  padding: 10px 20px;
+  line-height: 28px;
+  font-size: 12px;
+  min-height: 28px;
+}
+.tips .btn {
+  border-top: 1px dotted #c6c6c6;
+  padding: 8px;
+  height: 25px;
+}
+.tips .btn span {
+  float: right;
+  width: 80px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 12px;
+  border: 1px solid #ababab;
+  text-align: center;
+  cursor: pointer;
+}
+.tips .btn span:hover {
+  background-color: #d5e1f2;
+  border: 1px solid #a3dbe3;
+}
+/* 加载元数据弹窗 */
+.loadDictionary {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #ffffff;
+  border: 1px solid #19478a;
+  color: #444444;
+  width: 500px;
+  margin: -65px 0 0 -251px;
+  padding-bottom: 10px;
+  display: none;
+}
+.loadDictionary .url {
+  border-top: 1px dotted #c6c6c6;
+  border-bottom: 1px dotted #c6c6c6;
+  padding: 10px 20px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+}
+.loadDictionary .url p {
+  float: left;
+}
+.loadDictionary .url input {
+  float: left;
+  height: 22px;
+  padding: 1px 5px;
+  width: 350px;
+}
+.loadDictionary .btn {
+  padding-top: 10px;
+}
+
+.stiDesignerChartFormToolBarCell {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px dotted #c6c6c6;
+}
+
+.stiDesignerChartFormToolBarCellWithOutBorder {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.stiDesignerSeriesPropertiesContainer {
+  border-left: 1px dotted #c6c6c6;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.stiDesignerSeriesContainer {
+  border-right: 1px dotted #c6c6c6;
+  overflow-y: auto;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.stiDesignerChartFormContainer {
+  border-top: 1px dotted #c6c6c6;
+  overflow-y: auto;
+}
+
+.stiDesignerChartImage {
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.stiDesignerChartFormSeriesCaptionCell {
+  text-align: center;
+  padding: 4px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+}
+
+.stiDesignerChartFormSeriesLabelsButtonsCell {
+  border-top: 1px dotted #c6c6c6;
+}
+
+.stiDesignerChartFormShowSeriesLabelsButtons {
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+}
+
+.stiDesignerChartFormSeriesWizardContainer {
+  overflow-y: auto;
+  text-align: center;
+}
+
+.stiDesignerChartFormProgress {
+  position: absolute;
+  left: 70px;
+  top: 175px;
+}
+
+/* Mouse */
+.stiDesignerCheckBox_Mouse {
+  font-size: 12px;
+  font-family: initial;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerCheckBoxDisabled_Mouse {
+  font-size: 12px;
+  font-family: initial;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerCheckBoxImageBlock_Mouse {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #ababab;
+  background: #ffffff;
+}
+
+.stiDesignerCheckBoxImageBlockOver_Mouse {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #a3bde3;
+  background: #e6eefa;
+}
+
+.stiDesignerCheckBoxImageBlockDisabled_Mouse {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #e1e1e1;
+  background: #f7f7f7;
+}
+
+/* Touch */
+.stiDesignerCheckBox_Touch {
+  font-size: 12px;
+  font-family: initial;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerCheckBoxDisabled_Touch {
+  font-size: 12px;
+  font-family: initial;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerCheckBoxImageBlock_Touch {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ababab;
+  background: #ffffff;
+}
+
+.stiDesignerCheckBoxImageBlockOver_Touch {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #a3bde3;
+  background: #e6eefa;
+}
+
+.stiDesignerCheckBoxImageBlockDisabled_Touch {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e1e1e1;
+  background: #f7f7f7;
+}
+
+/*Check Box Menu Item*/
+.stiDesignerCheckBoxMenuItemImageBlock {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  background: transparent;
+}
+
+.stiDesignerCheckBoxMenuItemImageBlockChecked {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  background: #d5e1f2;
+}
+
+.stiDesignerCheckBoxMenuItemOver {
+  font-size: 12px;
+  font-family: initial;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  background: #d5e1f2;
+}
+
+.stiDesignerCheckBoxMenuItem {
+  font-size: 12px;
+  font-family: initial;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Color Control */
+.stiColorControlWithBorder {
+  border: 1px solid #ababab;
+  background: #ffffff;
+}
+
+.stiColorControlWithBorderDisabled {
+  border: 1px solid #e1e1e1;
+}
+
+.stiColorControlImage {
+  border: 1px solid #ababab;
+  width: 64px;
+  height: 15px;
+  cursor: default;
+}
+
+.stiColorControlImageWithoutBorder {
+  border: 1px solid transparent;
+  width: 64px;
+  height: 15px;
+  cursor: default;
+}
+
+.stiColorControlWithImage_ColorBar {
+  border: 1px solid transparent;
+  width: 14px;
+  height: 2px;
+  cursor: default;
+}
+
+/* Color Form */
+.stiColorFormControlsTable {
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  cursor: default;
+}
+
+.stiColorFormColorBar {
+  border: 1px solid #c6c6c6;
+  width: 128px;
+  height: 128px;
+  display: inline-block;
+}
+
+.stiColorFormWebColorPanel {
+  border: 1px dotted #c6c6c6;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Color Dialog */
+.stiColorDialogHeader {
+  background: #eeeeee;
+  font-family: initial;
+  font-size: 12px;
+  color: #949494;
+  cursor: default;
+  padding: 7px;
+}
+
+/* Mouse */
+.stiColorDialogButton_Mouse {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #e2e4e7;
+  cursor: default;
+}
+
+.stiColorDialogButtonOver_Mouse {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #f29436;
+  cursor: default;
+}
+
+/* Touch */
+.stiColorDialogButton_Touch {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #e2e4e7;
+  cursor: default;
+}
+
+.stiColorDialogButtonOver_Touch {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #f29436;
+  cursor: default;
+}
+
+/* Mouse */
+.stiDesignerComponentButton_Mouse {
+  min-height: 80px;
+  min-width: 55px;
+  cursor: default;
+  overflow: hidden;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerComponentButtonOver_Mouse {
+  min-height: 80px;
+  min-width: 55px;
+  cursor: default;
+  overflow: hidden;
+  background: #d5e1f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerComponentButtonSelected_Mouse {
+  min-height: 80px;
+  min-width: 55px;
+  cursor: default;
+  overflow: hidden;
+  background: #c2d5f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerComponentButtonDisabled_Mouse {
+  min-height: 80px;
+  min-width: 55px;
+  cursor: default;
+  overflow: hidden;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerComponentButton_Touch {
+  min-height: 80px;
+  min-width: 55px;
+  cursor: default;
+  overflow: hidden;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerComponentButtonOver_Touch {
+  min-height: 80px;
+  min-width: 55px;
+  cursor: default;
+  overflow: hidden;
+  background: #d5e1f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerComponentButtonSelected_Touch {
+  min-height: 80px;
+  min-width: 55px;
+  cursor: default;
+  overflow: hidden;
+  background: #c2d5f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerComponentButtonDisabled_Touch {
+  min-height: 80px;
+  min-width: 55px;
+  cursor: default;
+  overflow: hidden;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerContainerItem_Mouse {
+  display: inline-block;
+  height: 38px;
+  border: 1px solid #ababab;
+  background: #ffffff;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerContainerItemOver_Mouse {
+  display: inline-block;
+  height: 38px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  border: 1px solid #a3bde3;
+  background: #e6eefa;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerContainerItemSelected_Mouse {
+  display: inline-block;
+  height: 38px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  border: 1px solid #97b2db;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerContainerItemDisabled_Mouse {
+  display: inline-block;
+  height: 38px;
+  border: 1px solid #e1e1e1;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerContainerItem_Touch {
+  display: inline-block;
+  height: 38px;
+  border: 1px solid #ababab;
+  background: #ffffff;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerContainerItemOver_Touch {
+  display: inline-block;
+  height: 38px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  border: 1px solid #a3bde3;
+  background: #e6eefa;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerContainerItemSelected_Touch {
+  display: inline-block;
+  height: 38px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  border: 1px solid #97b2db;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerContainerItemDisabled_Touch {
+  display: inline-block;
+  height: 38px;
+  border: 1px solid #e1e1e1;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerDateControl_Mouse {
+  border: 1px solid #ababab;
+  color: #444444;
+  background: #ffffff;
+}
+
+.stiDesignerDateControlOver_Mouse {
+  border: 1px solid #a3bde3;
+  color: #444444;
+  background: #ffffff;
+}
+
+.stiDesignerDateControlDisabled_Mouse {
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+}
+
+/* Touch */
+.stiDesignerDateControl_Touch {
+  border: 1px solid #ababab;
+  color: #444444;
+  background: #ffffff;
+}
+
+.stiDesignerDateControlOver_Touch {
+  border: 1px solid #a3bde3;
+  color: #444444;
+  background: #ffffff;
+}
+
+.stiDesignerDateControlDisabled_Touch {
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+}
+
+/* Mouse */
+.stiDesignerDateControl_TextBox_Mouse {
+  font-size: 12px;
+  height: 21px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #444444;
+}
+
+/* Touch */
+.stiDesignerDateControl_TextBox_Touch {
+  font-size: 12px;
+  height: 26px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #444444;
+}
+
+/* Mouse */
+.stiDesignerDateControlDropDownListButton_Mouse {
+  height: 21px;
+  color: #444444;
+  cursor: default;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDateControlDropDownListButtonOver_Mouse {
+  height: 21px;
+  color: #444444;
+  cursor: default;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDateControlDropDownListButtonSelected_Mouse {
+  height: 21px;
+  color: #444444;
+  cursor: default;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDateControlDropDownListButtonDisabled_Mouse {
+  height: 21px;
+  color: #444444;
+  cursor: default;
+  color: #d6d3d6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerDateControlDropDownListButton_Touch {
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDateControlDropDownListButtonOver_Touch {
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDateControlDropDownListButtonSelected_Touch {
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDateControlDropDownListButtonDisabled_Touch {
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  color: #d6d3d6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDatePickerSeparator {
+  border-top: 1px solid #c6c6c6;
+}
+
+.stiDesignerDatePickerDayOfWeekCell {
+  white-space: nowrap;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Mouse */
+.stiDesignerDatePickerDayButton_Mouse {
+  height: 23px;
+  width: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDatePickerDayButtonOver_Mouse {
+  height: 23px;
+  width: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDatePickerDayButtonSelected_Mouse {
+  height: 23px;
+  width: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDatePickerDayButtonDisabled_Mouse {
+  height: 23px;
+  width: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerDatePickerDayButton_Touch {
+  height: 25px;
+  width: 25px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDatePickerDayButtonOver_Touch {
+  height: 25px;
+  width: 25px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDatePickerDayButtonSelected_Touch {
+  height: 25px;
+  width: 25px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDatePickerDayButtonDisabled_Touch {
+  height: 25px;
+  width: 25px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerDesignerStylesItem_Mouse,
+.stiDesignerDesignerStylesItemDisabled_Mouse,
+.stiDesignerDesignerStylesItemOver_Mouse {
+  height: 40px;
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDesignerStylesItemSelected_Mouse {
+  height: 40px;
+  background: #c2d5f2;
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerDesignerStylesItem_Touch,
+.stiDesignerDesignerStylesItemDisabled_Touch,
+.stiDesignerDesignerStylesItemOver_Touch {
+  height: 40px;
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDesignerStylesItemSelected_Touch {
+  height: 40px;
+  background: #c2d5f2;
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDictionarySeparator {
+  height: 0px;
+  border-bottom: 1px dotted #c6c6c6;
+}
+
+.stiDesignerDictionaryItemsContainer {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: auto;
+}
+
+.stiDesignerDictionaryProgressPanel {
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 5px;
+  background: #ffffff;
+}
+
+.stiDesignerDictionaryDescriptionPanel {
+  position: absolute;
+  height: 110px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: auto;
+  border-top: 1px dotted #c6c6c6;
+  font-family: initial;
+  font-size: 11px;
+  padding: 5px;
+}
+
+.stiCreateDataHintHeaderText {
+  font-family: initial;
+  font-size: 13px;
+  color: #19478a;
+  text-align: center;
+  white-space: nowrap;
+  border: 0px;
+  padding: 10px 3px 10px 3px;
+}
+
+.stiCreateDataHintText {
+  font-family: initial;
+  font-size: 12px;
+  color: gray;
+  line-height: 0.8;
+  text-align: center;
+  white-space: normal;
+  border: 0px;
+  padding: 3px;
+}
+
+.stiConnectionPathHintText {
+  font-family: initial;
+  font-size: 10px;
+  color: gray;
+  line-height: 0.8;
+  white-space: nowrap;
+  padding: 3px 0 3px 0;
+}
+
+.stiCreateDataHintItem {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.stiCreateDataSeparatorLine {
+  border-top: 1px solid #19478a;
+  height: 1px;
+  opacity: 0.8;
+}
+
+.stiEmptyTextPanel {
+  position: absolute;
+  width: 200px;
+  left: calc(50% - 100px);
+  top: calc(50% - 25px);
+}
+
+.stiDesignerDropDownListImage {
+  height: 16px;
+  width: 32px;
+  margin: 0 3px 0 3px;
+}
+
+.stiDesignerDropDownListImageCell {
+  border: 1px solid #ababab;
+  background: #ffffff;
+  border-right: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+}
+
+.stiDesignerDropDownListImageCellOver {
+  border: 1px solid #a3bde3;
+  background: #ffffff;
+  border-right: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+}
+
+.stiDesignerDropDownListImageCellSelected {
+  border: 1px solid #97b2db;
+  background: #ffffff;
+  border-right: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+}
+
+.stiDesignerDropDownListImageCellDisabled {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-right: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+}
+
+/* Mouse */
+.stiDesignerDropDownListButton_Mouse {
+  color: #444444;
+  cursor: default;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+}
+
+.stiDesignerDropDownListButtonOver_Mouse {
+  color: #444444;
+  cursor: default;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #a3bde3;
+  border-top: 1px solid #a3bde3;
+  border-right: 1px solid #a3bde3;
+}
+
+.stiDesignerDropDownListButtonSelected_Mouse {
+  color: #444444;
+  cursor: default;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #a3bde3;
+  border-top: 1px solid #a3bde3;
+  border-right: 1px solid #a3bde3;
+}
+
+.stiDesignerDropDownListButtonDisabled_Mouse {
+  color: #444444;
+  cursor: default;
+  color: #d6d3d6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+}
+
+/* Touch */
+.stiDesignerDropDownListButton_Touch {
+  color: #444444;
+  cursor: default;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #ababab;
+  border-top: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+}
+
+.stiDesignerDropDownListButtonOver_Touch {
+  color: #444444;
+  cursor: default;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #a3bde3;
+  border-top: 1px solid #a3bde3;
+  border-right: 1px solid #a3bde3;
+}
+
+.stiDesignerDropDownListButtonSelected_Touch {
+  color: #444444;
+  cursor: default;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #a3bde3;
+  border-top: 1px solid #a3bde3;
+  border-right: 1px solid #a3bde3;
+}
+
+.stiDesignerDropDownListButtonDisabled_Touch {
+  color: #444444;
+  cursor: default;
+  color: #d6d3d6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+}
+
+.stiDesignerFileMenu {
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: #19478a;
+  z-index: 9;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFileMenuItem {
+  white-space: nowrap;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 14px 0px 14px 0px;
+}
+
+.stiDesignerFileMenuItemOver {
+  white-space: nowrap;
+  color: #ffffff;
+  background: #3b629b;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 14px 0px 14px 0px;
+}
+
+.stiDesignerFileMenuItemSelected {
+  white-space: nowrap;
+  color: #ffffff;
+  background: #11315f;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 14px 0px 14px 0px;
+}
+
+.stiDesignerFileMenuItemDisabled {
+  white-space: nowrap;
+  color: #6b8ab8;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 14px 0px 14px 0px;
+}
+
+.stiDesignerFileMenuSeparator {
+  background: #3b629b;
+  height: 1px;
+}
+
+/* Filter Container */
+.stiDesignerFilterContainer {
+  background: #ffffff;
+  border-top: 1px dotted #c6c6c6;
+  overflow: auto;
+}
+
+.stiDesignerFilterPanelHeader {
+  border-bottom: 1px solid #c6c6c6;
+}
+
+/* Filter Panel */
+.stiDesignerFilterPanel {
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  color: #444444;
+  font-family: initial;
+  font-size: 12px;
+  margin: 4px;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+/* Chart Form*/
+.stiDesignerChartFilterPanel {
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  color: #444444;
+  font-family: initial;
+  font-size: 12px;
+  margin: 4px;
+  padding: 5px;
+}
+
+.stiDesignerChartFilterPanelSelected {
+  border: 1px solid #97b2db;
+  background: #eeeeee;
+  color: #444444;
+  font-family: initial;
+  font-size: 12px;
+  margin: 4px;
+  padding: 5px;
+}
+
+/* Mouse */
+.stiDesignerFormButton_Mouse {
+  background: #ffffff;
+  border: 1px solid #ababab;
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFormButtonOver_Mouse {
+  background: #d5e1f2;
+  border: 1px solid #a3bde3;
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFormButtonSelected_Mouse {
+  background: #c2d5f2;
+  border: 1px solid #97b2db;
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFormButtonDisabled_Mouse {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  height: 23px;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerFormButton_Touch {
+  background: #ffffff;
+  border: 1px solid #ababab;
+  height: 29px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFormButtonOver_Touch {
+  background: #d5e1f2;
+  border: 1px solid #a3bde3;
+  height: 29px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFormButtonSelected_Touch {
+  background: #c2d5f2;
+  border: 1px solid #97b2db;
+  height: 29px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFormButtonDisabled_Touch {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  color: #d6d3d6;
+  height: 29px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerForm {
+  position: absolute;
+  border: 1px solid #19478a;
+  background: #ffffff;
+  color: #444444;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+.stiDesignerFormHeader {
+  background: #ffffff;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  color: #19478a;
+  text-align: center;
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.stiDesignerFormContainer {
+  background: #ffffff;
+  border-top: 1px dotted #c6c6c6;
+}
+
+.stiDesignerFormSeparator {
+  height: 0px;
+  border-top: 1px dotted #c6c6c6;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.stiDesignerFormButtonsPanel {
+  float: right;
+}
+
+.stiDesignerFormBlock {
+  background: #ffffff;
+  color: #444444;
+  font-family: initial;
+  font-size: 12px;
+}
+
+.stiDesignerFormBlockHeader {
+  color: #949494;
+  font-family: initial;
+  font-size: 12px;
+  background: #eeeeee;
+}
+
+.stiDesignerFormPanelArrow {
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 21px;
+  left: -21px;
+}
+
+.stiDesignerFormPanelArrow:after {
+  overflow: hidden;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #19478a;
+  left: 17px;
+  width: 21px;
+  height: 21px;
+  content: '';
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.stiDesignerMessagesFormDescription {
+  line-height: 1.2;
+  border: 0px;
+  margin: 0px;
+  padding: 20px 30px 20px 0;
+  overflow: hidden;
+  min-width: 350px;
+  max-width: 650px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  text-align: left;
+  cursor: default;
+}
+
+.stiDesignerNotificationFormDescription {
+  text-align: center;
+  font-family: initial;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #888888;
+  width: 500px;
+  padding: 10px 25px 10px 25px;
+}
+
+.stiDesignerNotificationFormMessage {
+  text-align: center;
+  font-family: initial;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #19478a;
+  width: 500px;
+  padding: 10px 25px 10px 25px;
+}
+
+.stiDesignerNotificationFormCountBlock {
+  position: absolute;
+  display: inline-block;
+  color: #76a797;
+  font-family: initial;
+  font-size: 30px;
+  text-align: center;
+  width: 50px;
+  top: calc(50% - 2px);
+}
+
+.stiDesignerGroupBlock {
+  padding: 1px;
+  font-family: initial;
+  font-size: 11px;
+  color: #444444;
+  cursor: default;
+}
+
+.stiDesignerGroupBlockCaption {
+  width: 100%;
+  text-align: center;
+  padding: 0 8px 0 8px;
+  border: 0px;
+  white-space: nowrap;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerGroupBlockTableCell {
+  vertical-align: top;
+  padding: 2px;
+  border: 0px;
+}
+
+/* Mouse */
+
+.stiDesignerGroupBlockContainer_Mouse {
+  overflow: hidden;
+  height: 75px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerGroupBlockContainerWithOutCaption_Mouse {
+  overflow: hidden;
+  height: 90px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerGroupBlockDownRow_Mouse {
+  overflow: hidden;
+  height: 15px;
+}
+
+.stiDesignerGroupBlockSeparator_Mouse {
+  width: 1px;
+  height: 84px;
+  background: #c6c6c6;
+}
+
+.stiDesignerGroupBlockButton_Mouse {
+  height: 15px;
+  width: 15px;
+}
+
+.stiDesignerGroupBlockButtonOver_Mouse {
+  height: 15px;
+  width: 15px;
+  background: #d5e1f2;
+}
+
+.stiDesignerGroupBlockButtonSelected_Mouse {
+  height: 15px;
+  width: 15px;
+  background: #c2d5f2;
+}
+
+/* Touch */
+.stiDesignerGroupBlockDownRow_Touch {
+  overflow: hidden;
+  height: 20px;
+}
+
+.stiDesignerGroupBlockContainer_Touch {
+  overflow: hidden;
+  height: 75px;
+}
+
+.stiDesignerGroupBlockContainerWithOutCaption_Touch {
+  overflow: hidden;
+  height: 90px;
+}
+
+.stiDesignerGroupBlockSeparator_Touch {
+  width: 1px;
+  height: 84px;
+  background: #c6c6c6;
+}
+
+.stiDesignerGroupBlockButton_Touch {
+  height: 20px;
+  width: 20px;
+}
+
+.stiDesignerGroupBlockButtonOver_Touch {
+  height: 20px;
+  width: 20px;
+  background: #d5e1f2;
+}
+
+.stiDesignerGroupBlockButtonSelected_Touch {
+  height: 20px;
+  width: 20px;
+  background: #c2d5f2;
+}
+
+.stiDesignerGroupPanel {
+  border: 1px solid #c6c6c6;
+  -webkit-padding-before: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+  -webkit-padding-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.stiDesignerGroupPanelCaption {
+  padding: 2px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  cursor: default;
+  margin-left: 10px;
+}
+
+/* Mouse */
+.stiDesignerGroupPanelHeader_Mouse {
+  height: 23px;
+  color: #8f8f8f;
+  background: #eeeeee;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerGroupPanelHeader_Touch {
+  height: 28px;
+  color: #8f8f8f;
+  background: #eeeeee;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Small intervals */
+.stiDesignerCaptionControls {
+  white-space: nowrap;
+  padding: 0 15px 0 7px;
+  border: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  width: 1px;
+}
+
+.stiDesignerTextContainer {
+  white-space: normal;
+  border: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+}
+
+.stiDesignerControlCells {
+  padding: 3px 4px 3px 0;
+  border: 0px;
+}
+
+/* Big intervals */
+.stiDesignerCaptionControlsBigIntervals {
+  white-space: nowrap;
+  padding: 0 25px 0 15px;
+  border: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  width: 1px;
+}
+
+.stiDesignerControlCellsBigIntervals {
+  padding: 3px 12px 3px 0;
+  border: 0px;
+}
+
+.stiDesignerHomePanelSeparator {
+  background: #c6c6c6;
+}
+
+.stiDesignerDrillDownFormCaptionControls {
+  white-space: nowrap;
+  min-width: 200px;
+  padding: 0 8px 0 15px;
+  border: 0px;
+  margin: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+}
+
+/* Panel */
+.stiDesignerCaptionControlsOnPanel {
+  white-space: nowrap;
+  padding: 0 5px 0 3px;
+  border: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  width: 1px;
+}
+
+.stiDesignerCaptionControlsOnPanelDisabled {
+  white-space: nowrap;
+  padding: 0 5px 0 3px;
+  border: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  width: 1px;
+}
+
+.stiDesignerControlCellsOnPanel {
+  padding: 0 3px 0 0;
+  border: 0px;
+}
+
+.stiBrushControlColorBar {
+  border: 1px solid #ababab;
+  width: 30px;
+  height: 14px;
+}
+
+/* Status Panel Separator */
+.stiDesignerStatusPanelSeparator {
+  border: 0px;
+  border-left: 1px dashed #a3b5d0;
+  padding: 0px;
+  margin: 0 3px 0 3px;
+  height: 35px;
+}
+
+/* VariableItemsForm Controls Cell */
+.stiDesignerVariableItemsFormControlsLeftCell {
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  border-left: 1px dashed #c6c6c6;
+}
+
+.stiDesignerVariableItemsFormControlsRightCell {
+  vertical-align: top;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Style Designer Form */
+.stiDesignerStyleDesignerFormToolbarCell {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px dotted #c6c6c6;
+}
+
+.stiDesignerStyleDesignerFormPropertiesPanel {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.styleDesignerItemsContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.stiDesignerSelectDataProgress {
+  position: absolute;
+  left: 200px;
+  top: 150px;
+}
+
+.stiDesignerTextEditFormSystemVariablesInfo {
+  border-top: 1px dotted #c6c6c6;
+  padding: 6px 6px 0 6px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+}
+
+.stiDesignerCreateDataColumsTree {
+  border-right: 1px dotted #c6c6c6;
+  border-bottom: 1px dotted #c6c6c6;
+  overflow: auto;
+}
+
+.stiDesignerCreateDataColumsButtonsTable {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerCreateDataMainTable {
+  border-bottom: 1px dotted #c6c6c6;
+}
+
+.stiDesignerConditionsFormMainContainer {
+  border-left: 1px dotted #c6c6c6;
+  width: 700px;
+  height: 380px;
+}
+
+.stiDesignerConditionPanel {
+  width: 700px;
+  height: 380px;
+  overflow: auto;
+}
+
+.stiDesignerConditionsFormToolbarCell {
+  border-top: 1px dotted #c6c6c6;
+  width: 100%;
+}
+
+.stiDesignerConditionsFormSampleBar {
+  border: 1px solid #ababab;
+  margin: 0 4px 0 4px;
+}
+
+.stiDesignerPagesContainer {
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.stiDesignerViewDataTableCell {
+  font-family: initial;
+  font-size: 12px;
+  padding: 4px 15px 4px 4px;
+  color: #444444;
+  border-bottom: 1px dotted #c6c6c6;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerDataGridCell {
+  padding: 4px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  border-bottom: 1px dotted #c6c6c6;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerTextFormatFormCustomContainer {
+  border-top: 1px dotted #c6c6c6;
+}
+
+.stiDesignerCrossTabContainerCell {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  border-left: 1px dotted #c6c6c6;
+  border-bottom: 1px dotted #c6c6c6;
+}
+
+.stiDesignerrCrossTabContainerToolbar {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  border-bottom: 1px dotted #c6c6c6;
+  width: 100%;
+}
+
+.stiDesignerDescriptionForBigButton {
+  white-space: nowrap;
+  padding: 0 25px 0 15px;
+  border: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  line-height: 1.7;
+}
+
+.stiDesignerFileMenuPanelHeader {
+  font-family: initial, Helvetica, sans-serif;
+  font-size: 36px;
+  background: #ffffff;
+  color: #444444;
+  text-align: center;
+  cursor: default;
+  display: inline-block;
+  margin: 30px;
+  height: 60px;
+}
+
+.stiImageContainerWithBorder {
+  border: 1px dashed #ababab;
+  background: #f9f9f9;
+}
+
+.stiIconImageContainerWithBorder {
+  border: 1px dashed #ababab;
+  background: #f9f9f9;
+  margin: 0 0 8px 8px;
+  text-align: center;
+  font-size: 150pt;
+  font-family: 'Stimulsoft';
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.stiDesignerPageSetupFormSample {
+  margin: 4px;
+}
+
+.stiDesignerPageSetupFormSampleCell {
+  border-right: 1px dotted #c6c6c6;
+  text-align: center;
+  vertical-align: top;
+  width: 150px;
+}
+
+.stiDragAndDropHintText {
+  color: #696969;
+  margin-left: 40px;
+}
+
+.stiResourceContainerWithBorder {
+  border: 1px dashed #ababab;
+  background: #f9f9f9;
+}
+
+.stiResourceInnerContainer {
+  overflow: auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.stiResourceViewDataContainer {
+  background: #f1f1f1;
+  overflow: auto;
+}
+
+.stiBarCodeFormPropertiesContainer {
+  width: 430px;
+  padding: 5px 20px 5px 10px;
+}
+
+.stiShapeFormPropertiesContainer {
+  width: 400px;
+  padding: 5px 20px 5px 10px;
+}
+
+.stiCloudDemoPanel {
+  text-align: center;
+  font-family: initial;
+  font-size: 15px;
+  line-height: 1.3;
+  color: #888888;
+  padding: 10px 0 10px 0;
+}
+
+.stiUsingMarker {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  background: #ffffff;
+  left: 10px;
+  top: calc(50% - 6px);
+}
+
+.stiUsingMarker div {
+  margin: 2px 0 0 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background: #19478a;
+}
+
+.stiUsingMarkerForBigButton {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+  background: #ffffff;
+  bottom: 1px;
+  left: calc(50% - 6px);
+}
+
+.stiUsingMarkerForBigButton div {
+  margin: 2px 0 0 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background: #ababab;
+}
+
+.stiThemesMenuHeader {
+  color: #ffffff;
+  background: #19478a;
+  padding: 7px;
+  font-family: initial;
+  font-size: 12px;
+}
+
+.stiCrossTabsTree {
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.stiDataContainer {
+  border: 1px dashed #c6c6c6;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 1px;
+}
+
+.stiDataGrid {
+  border: 1px dashed #c6c6c6;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.stiDataTransformErrorBlock {
+  font-family: initial;
+  font-size: 12px;
+  color: #ff0000;
+  background: #fcdcdc;
+  padding: 15px;
+  margin-top: 6px;
+}
+
+.stiStylesControlItem {
+  font-family: initial;
+  font-size: 12px;
+  float: left;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stiDesignerSymbolsContainer {
+  overflow: auto;
+  border: 1px solid #ababab;
+  padding: 2px;
+  margin: 12px;
+}
+
+.stiDesignerBigText {
+  white-space: normal;
+  font-family: initial;
+  font-size: 25px;
+  color: #444444;
+  text-align: center;
+}
+
+.stiDesignerBorderImageRotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-left: -5px;
+}
+
+.stiManualControlHeaderCell {
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  background: #eeeeee;
+  text-align: center;
+  border: 1px solid #ababab;
+  line-height: 1.3;
+}
+
+/* Mouse */
+.stiDesignerHyperlinkButton_Mouse {
+  cursor: pointer;
+  color: #5a83ad;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerHyperlinkButtonOver_Mouse {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #5a83ad;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerHyperlinkButtonSelected_Mouse {
+  cursor: pointer;
+  color: #5a83ad;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerHyperlinkButtonDisabled_Mouse {
+  cursor: pointer;
+  color: #5a83ad;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerHyperlinkButton_Touch {
+  color: #5a83ad;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerHyperlinkButtonOver_Touch {
+  text-decoration: underline;
+  color: #5a83ad;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerHyperlinkButtonSelected_Touch {
+  color: #5a83ad;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerHyperlinkButtonDisabled_Touch {
+  color: #d6d3d6;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerImageGalleryItem {
+  cursor: default;
+  font-family: initial;
+  font-size: 11px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  color: #ffffff;
+}
+
+.stiDesignerImageGalleryItemDefault {
+  background: #e3e3e3;
+  border: 1px solid #ababab;
+}
+
+.stiDesignerImageGalleryItemOver {
+  background: #d5e1f2;
+  border: 1px solid #19478a;
+}
+
+.stiDesignerImageGalleryItemSelected {
+  background: #c2d5f2;
+  border: 1px solid #19478a;
+}
+
+.stiDesignerImageGalleryItemDisabled {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+}
+
+.stiItemGalleryCaptionContainer {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 70px;
+  min-width: 70px;
+  padding: 1px 5px 1px 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.stiItemGalleryCaption {
+  height: 15px;
+  padding: 0px;
+  white-space: nowrap;
+  margin-top: 4px;
+}
+
+.stiItemGalleryCaptionDefault {
+  background: #a0a0a0;
+}
+
+.stiItemGalleryCaptionOver {
+  background: #19478a;
+}
+
+.stiItemGalleryCaptionSelected {
+  background: #11315f;
+}
+
+.stiItemGalleryCaptionDisabled {
+  background: #a0a0a0;
+}
+
+.stiDesignerImageGalleryContainer {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Mouse */
+.stiDesignerMenuBigItem_Mouse {
+  height: 66px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 14px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuBigItemOver_Mouse {
+  height: 66px;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 14px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuBigItemSelected_Mouse {
+  height: 66px;
+  background: #c2d5f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 14px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuBigItemDisabled_Mouse {
+  height: 66px;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 14px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerMenuBigItem_Touch {
+  height: 66px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 14px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuBigItemOver_Touch {
+  height: 66px;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 14px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuBigItemSelected_Touch {
+  height: 66px;
+  background: #c2d5f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 14px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuBigItemDisabled_Touch {
+  height: 66px;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 14px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerMenuMiddleItem_Mouse {
+  height: 42px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuMiddleItemOver_Mouse {
+  height: 42px;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuMiddleItemSelected_Mouse {
+  height: 42px;
+  background: #c2d5f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuMiddleItemDisabled_Mouse {
+  height: 42px;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerMenuMiddleItem_Touch {
+  height: 42px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuMiddleItemOver_Touch {
+  height: 42px;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuMiddleItemSelected_Touch {
+  height: 42px;
+  background: #c2d5f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuMiddleItemDisabled_Touch {
+  height: 42px;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerParentMenu {
+  z-index: 45;
+  position: absolute;
+}
+
+.stiDesignerMenu {
+  position: absolute;
+  padding: 1px;
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  color: #444444;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+.stiDesignerOpacityMenu {
+  overflow: visible;
+  /*position: absolute;*/
+  padding: 1px;
+}
+
+.stiDesignerInnerContainerOpacityMenu {
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  color: #444444;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  /*position: absolute;*/
+}
+
+.stiDesignerMenuHeader {
+  white-space: nowrap;
+  background: #eeeeee;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 3px;
+  text-align: center;
+}
+
+.stiDesignerVerticalMenuSeparator {
+  height: 1px;
+  background: #c6c6c6;
+}
+
+/* Mouse */
+.stiDesignerMenuStandartItem_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuStandartItemOver_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuStandartItemSelected_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #c2d5f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuStandartItemDisabled_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerMenuStandartItem_Touch {
+  height: 30px;
+  white-space: nowrap;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuStandartItemOver_Touch {
+  height: 30px;
+  white-space: nowrap;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuStandartItemSelected_Touch {
+  height: 30px;
+  white-space: nowrap;
+  background: #c2d5f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerMenuStandartItemDisabled_Touch {
+  height: 30px;
+  white-space: nowrap;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerClearAllStyles {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.stiDesignerMainPanel {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  background: #ffffff;
+  cursor: default;
+}
+
+.stiDesignerMainPanel > table,
+.stiDesignerMainPanel > tr,
+.stiDesignerMainPanel > td,
+.stiDesignerMainPanel > div {
+  line-height: 1;
+  box-sizing: content-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.stiDesignerMainPanel *,
+.stiDesignerMainPanel *:before,
+.stiDesignerMainPanel *:after {
+  box-sizing: content-box;
+  border-collapse: initial;
+}
+
+.stiDesignerToolBar {
+  background: #19478a;
+  font-family: initial;
+  font-size: 12px;
+  color: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolbox {
+  font-family: initial;
+  font-size: 12px;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #ffffff;
+  border-right: 1px solid #c6c6c6;
+  color: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerWorkPanel {
+  background: #ffffff;
+  border-bottom: 1px solid #c6c6c6;
+  position: relative;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStatusPanel {
+  position: absolute;
+  height: 35px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: #19478a;
+  z-index: 3;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  white-space: nowrap;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPagesPanel {
+  position: absolute;
+  border-bottom: 1px solid #c6c6c6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerDisabledPanel {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background: white;
+  filter: alpha(Opacity=10);
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+}
+
+.stiDesignerAboutPanel {
+  width: 520px;
+  z-index: 500;
+  text-align: center;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #19478a;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.stiDesignerAboutPanelHeader {
+  width: 100%;
+  font-family: initial;
+  font-size: 24px;
+  text-align: center;
+  color: #19478a;
+  margin-top: 35px;
+}
+
+.stiDesignerAboutPanelCopyright {
+  width: 100%;
+  text-align: center;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  margin-top: 30px;
+}
+
+.stiDesignerAboutPanelVersion {
+  width: 100%;
+  text-align: center;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  margin-top: 20px;
+}
+
+.stiDesignerAboutPanelStiLink {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-family: initial;
+  font-size: 12px;
+  margin: 10px 0 12px 0;
+  color: #19478a;
+  text-decoration: underline;
+}
+
+.stiDesignerProcessImageStatusPanel {
+  font-family: initial;
+  color: #ffffff;
+}
+
+.stiDesignerProcessImage {
+  z-index: 45;
+  position: absolute;
+  border: 1px solid #2b579a;
+  background: #ffffff;
+  font-family: initial;
+  font-size: 12px;
+  color: #2b579a;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+
+.stiDesignerProcessImageCloud {
+  z-index: 45;
+  position: absolute;
+}
+
+.stiDesignerPaintPanel {
+  position: absolute;
+  overflow: auto;
+  background: #f1f1f1;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPaintPanel table,
+.stiDesignerPaintPanel td {
+  padding: 0px;
+  margin: 0px;
+}
+
+.stiDesignerNewReportPanel {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 170px;
+  right: 0px;
+}
+
+.stiDesignerItemsContainer {
+  border: 1px dotted #c6c6c6;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.stiDesignerVariableItemsFormContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 4px;
+}
+
+.stiDesignerDataSourceFormColumnsAndParametersTree {
+  border-right: 1px dotted #c6c6c6;
+  overflow: auto;
+  padding: 4px;
+}
+
+.stiDesignerRelationFormColumnsContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #c6c6c6;
+  padding-top: 4px;
+  margin-top: 6px;
+}
+
+.stiDesignerRelationFormErrorBlock {
+  color: red;
+  font-family: initial;
+  font-size: 12px;
+  background: #fcdcdc;
+}
+
+.stiDesignerInfoPanel {
+  height: 30px;
+  padding-left: 30px;
+  position: relative;
+  background: #fbf4e1;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: initial;
+  font-size: 12px;
+}
+
+/* Mouse */
+.stiDesignerHomePanel_Mouse {
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 92px;
+}
+
+.stiDesignerInsertPanel_Mouse {
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 92px;
+}
+
+.stiDesignerLayoutPanel_Mouse {
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 92px;
+}
+
+.stiDesignerPagePanel_Mouse {
+  background: #ffffff;
+  height: 92px;
+  position: relative;
+}
+
+.stiDesignerPreviewPanel_Mouse {
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 92px;
+}
+
+/* Touch */
+.stiDesignerHomePanel_Touch {
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 97px;
+}
+
+.stiDesignerInsertPanel_Touch {
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 97px;
+}
+
+.stiDesignerLayoutPanel_Touch {
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 97px;
+}
+
+.stiDesignerPagePanel_Touch {
+  background: #ffffff;
+  height: 97px;
+  position: relative;
+}
+
+.stiDesignerPreviewPanel_Touch {
+  background: #ffffff;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 97px;
+}
+
+.stiDesignerGroupHeaderFormPanel {
+  height: 350px;
+  width: 450px;
+  overflow: auto;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerEditFormPanel {
+  height: 450px;
+  width: 450px;
+  overflow: auto;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerSubReportFormPanel {
+  height: 450px;
+  width: 600px;
+  overflow: auto;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerTextEditorFormPanel {
+  height: 450px;
+  width: 550px;
+  overflow: auto;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerDbsWatermarkFormPanel {
+  min-height: 400px;
+  min-width: 450px;
+  overflow: auto;
+  border-left: 1px dotted #c6c6c6;
+}
+
+.stiDesignerMapsEditorFormPanel {
+  height: 570px;
+  width: 600px;
+  overflow: auto;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerInteractionFormPanel {
+  width: 550px;
+  overflow: auto;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerPageSetupFormPanel {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.stiDesignerImageFormMainPanel {
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+.stiDesignerGroupHeaderFormMainPanel {
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  border-bottom: 1px dotted #c6c6c6;
+}
+
+.stiDesignerDataColumnFormMainPanel {
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  width: 400px;
+  height: 450px;
+  padding: 4px;
+  overflow: auto;
+}
+
+.stiDesignerGlobalizatonStringsFormContainer {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  border-right: 1px dotted #c6c6c6;
+  border-left: 1px dotted #c6c6c6;
+}
+
+*::selection {
+  background: #d5e1f2;
+}
+*::-moz-selection {
+  background: #d5e1f2;
+}
+
+/* Mouse */
+.stiDesignerNewReportButton_Mouse {
+  height: 245px;
+  width: 175px;
+  cursor: default;
+  overflow: hidden;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerNewReportButtonOver_Mouse {
+  height: 245px;
+  width: 175px;
+  cursor: default;
+  overflow: hidden;
+  background: #d5e1f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerNewReportButtonSelected_Mouse {
+  height: 245px;
+  width: 175px;
+  cursor: default;
+  background: #c2d5f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerNewReportButtonDisabled_Mouse {
+  height: 245px;
+  width: 175px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerNewReportButton_Touch {
+  height: 245px;
+  width: 175px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerNewReportButtonOver_Touch {
+  height: 245px;
+  width: 175px;
+  cursor: default;
+  background: #d5e1f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerNewReportButtonSelected_Touch {
+  height: 245px;
+  width: 175px;
+  cursor: default;
+  background: #c2d5f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerNewReportButtonDisabled_Touch {
+  height: 245px;
+  width: 175px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerPagesButton_Mouse {
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPagesButtonOver_Mouse {
+  border-bottom: 2px solid #d5e1f2;
+  border-top: 2px solid #d5e1f2;
+  background: #d5e1f2;
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPagesButtonSelected_Mouse {
+  border-top: 2px solid #19478a;
+  border-bottom: 2px solid #ffffff;
+  height: 26px;
+  color: #19478a;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPagesButtonDisabled_Mouse {
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerPagesButton_Touch {
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPagesButtonOver_Touch {
+  border-bottom: 2px solid #d5e1f2;
+  border-top: 2px solid #d5e1f2;
+  background: #d5e1f2;
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPagesButtonSelected_Touch {
+  border-top: 2px solid #19478a;
+  border-bottom: 2px solid #ffffff;
+  height: 26px;
+  color: #19478a;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPagesButtonDisabled_Touch {
+  border-bottom: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  height: 26px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerPinButton_Mouse {
+  height: 17px;
+  color: #444444;
+  border: 1px solid transparent;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPinButtonOver_Mouse {
+  height: 17px;
+  border: 1px solid #19478a;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPinButtonSelected_Mouse {
+  height: 17px;
+  border: 1px solid #19478a;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPinButtonDisabled_Mouse {
+  height: 17px;
+  border: 1px solid transparent;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerPinButton_Touch {
+  height: 22px;
+  border: 1px solid transparent;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPinButtonOver_Touch {
+  height: 22px;
+  border: 1px solid #19478a;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPinButtonSelected_Touch {
+  height: 22px;
+  border: 1px solid #19478a;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPinButtonDisabled_Touch {
+  height: 22px;
+  border: 1px solid transparent;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+.mobile_designer_loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 6px solid rgba(25, 71, 138, 0.2);
+  border-right: 6px solid rgba(25, 71, 138, 0.2);
+  border-bottom: 6px solid rgba(25, 71, 138, 0.2);
+  border-left: 6px solid #19478a;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.mobile_designer_loader,
+.mobile_designer_loader:after {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*loader-mini*/
+
+.mobile_designer_loader_mini_white {
+  /*margin: 60px auto;*/
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 3px solid rgba(255, 255, 255, 0.2);
+  border-right: 3px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  border-left: 3px solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.mobile_designer_loader_mini_white,
+.mobile_designer_loader_mini_white:after {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*loader-mini*/
+
+.mobile_designer_loader_mini_color {
+  /*margin: 60px auto;*/
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 3px solid rgba(25, 71, 138, 0.2);
+  border-right: 3px solid rgba(25, 71, 138, 0.2);
+  border-bottom: 3px solid rgba(25, 71, 138, 0.2);
+  border-left: 3px solid #19478a;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.mobile_designer_loader_mini_color,
+.mobile_designer_loader_mini_color:after {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.stiProgressText {
+  position: absolute;
+  top: 88px;
+  left: 0px;
+  height: 40px;
+  width: 100%;
+  font-family: 'Arial';
+  font-size: 20px;
+  text-align: center;
+  color: #444444;
+}
+
+/* Mouse */
+.stiDesignerPropertiesBrushControlButton_Mouse {
+  border: 1px solid #ababab;
+  background: #ffffff;
+  height: 20px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesBrushControlButtonOver_Mouse {
+  border: 1px solid #a3bde3;
+  height: 20px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesBrushControlButtonSelected_Mouse {
+  border: 1px solid #a3bde3;
+  height: 20px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesBrushControlButtonDisabled_Mouse {
+  border: 1px solid #e1e1e1;
+  height: 20px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerPropertiesBrushControlButton_Touch {
+  border: 1px solid #ababab;
+  background: #ffffff;
+  height: 24px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesBrushControlButtonOver_Touch {
+  border: 1px solid #a3bde3;
+  height: 24px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesBrushControlButtonSelected_Touch {
+  border: 1px solid #a3bde3;
+  height: 24px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesBrushControlButtonDisabled_Touch {
+  border: 1px solid #e1e1e1;
+  height: 24px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerPropertiesPanelFooterTabButton_Mouse {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelFooterTabButtonOver_Mouse {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 2px solid #d5e1f2;
+  height: 28px;
+  color: #444444;
+  background: #d5e1f2;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelFooterTabButtonSelected_Mouse {
+  border-left: 1px solid #c6c6c6;
+  border-right: 1px solid #c6c6c6;
+  border-bottom: 2px solid #19478a;
+  height: 28px;
+  color: #19478a;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelFooterTabButtonDisabled_Mouse {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerPropertiesPanelFooterTabButton_Touch {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelFooterTabButtonOver_Touch {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 2px solid #d5e1f2;
+  height: 28px;
+  color: #444444;
+  background: #d5e1f2;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelFooterTabButtonSelected_Touch {
+  border-left: 1px solid #c6c6c6;
+  border-right: 1px solid #c6c6c6;
+  border-bottom: 2px solid #19478a;
+  height: 28px;
+  color: #19478a;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelFooterTabButtonDisabled_Touch {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesGroup {
+  background: #f8f8f8;
+}
+
+.stiDesignerPropertiesGroupContainer {
+  background: #f8f8f8;
+  padding: 5px 0 5px 0;
+}
+
+/* Mouse */
+.stiDesignerPropertiesGroupHeaderButton_Mouse {
+  font-weight: bold;
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonOver_Mouse {
+  font-weight: bold;
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonSelected_Mouse {
+  font-weight: bold;
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #97b2db;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonDisabled_Mouse {
+  font-weight: bold;
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerPropertiesGroupHeaderButton_Touch {
+  font-weight: bold;
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonOver_Touch {
+  font-weight: bold;
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonSelected_Touch {
+  font-weight: bold;
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #97b2db;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonDisabled_Touch {
+  font-weight: bold;
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  background: #ffffff;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanel {
+  position: absolute;
+  background: #ffffff;
+  border-right: 1px solid #c6c6c6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelRight {
+  position: absolute;
+  background: #ffffff;
+  border-left: 1px solid #c6c6c6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelFixedMode {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #19478a;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.stiDesignerDisabledPanelOfPropertiesPanel {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background: white;
+  filter: alpha(Opacity=80);
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  z-index: 50;
+}
+
+.stiDesignerPropertiesPanelHeader {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  left: 0px;
+  background: #ffffff;
+  border-bottom: 1px dotted #c6c6c6;
+  color: #19478a;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  overflow: hidden;
+  height: 34px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesPanelFooter {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 33px;
+  background: #ffffff;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  overflow: hidden;
+  border-top: 1px solid #c6c6c6;
+}
+
+.stiDesignerPropertiesPanelInnerContent {
+  position: absolute;
+  overflow: auto;
+  right: 0px;
+  left: 0px;
+  bottom: 34px;
+  background: #ffffff;
+}
+
+.stiDesignerPropertiesPanelShowButtonsPanel {
+  position: absolute;
+  width: 1px;
+}
+
+.stiDesignerPropertyCaption {
+  line-height: normal;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 5px 0 5px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerComponentsListPanel {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  right: 0px;
+  padding: 0 0 5px 6px;
+  overflow: hidden;
+  border-bottom: 1px dotted #c6c6c6;
+}
+
+/* Mouse */
+.stiDesignerPropertyButton_Mouse {
+  height: 20px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertyButtonOver_Mouse {
+  height: 20px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertyButtonSelected_Mouse {
+  height: 20px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertyButtonDisabled_Mouse {
+  height: 20px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerPropertyButton_Touch {
+  height: 25px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertyButtonOver_Touch {
+  height: 25px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertyButtonSelected_Touch {
+  height: 25px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerPropertyButtonDisabled_Touch {
+  height: 25px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiMobileDesignerRadioButton {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-family: initial;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiMobileDesignerRadioButtonDisabled {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-family: initial;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiMobileDesignerRadioButtonOutCircle {
+  border: 1px solid #ababab;
+  background: #ffffff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.stiMobileDesignerRadioButtonOutCircleOver {
+  border: 1px solid #a3bde3;
+  background: #e6eefa;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.stiMobileDesignerRadioButtonOutCircleDisabled {
+  border: 1px solid #e1e1e1;
+  background: #f7f7f7;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Mouse */
+.stiMobileDesignerRadioButtonInnerCircle_Mouse {
+  margin: 3px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #ababab;
+  background: #ababab;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Touch */
+.stiMobileDesignerRadioButtonInnerCircle_Touch {
+  margin: 4px;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #ababab;
+  background: #ababab;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.stiDesignerCheckPanel {
+  background: #ffffff;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+}
+
+.stiDesignerCheckPopupPanel {
+  position: absolute;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid #19478a;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  min-width: 250px;
+  max-width: 450px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.stiDesignerCheckPopupPanelArrow {
+  overflow: hidden;
+  position: absolute;
+  width: 31px;
+  height: 21px;
+  left: 11px;
+}
+
+.stiDesignerCheckPopupPanelArrow:after {
+  overflow: hidden;
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #19478a;
+  left: 7px;
+  top: -17px;
+  width: 21px;
+  height: 21px;
+  content: '';
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.stiDesignerCheckPreviewPanel {
+  position: absolute;
+  background: #ffffff;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  z-index: 100;
+}
+
+.stiDesignerCheckContainer {
+  width: 600px;
+  height: 400px;
+  overflow: auto;
+  position: relative;
+}
+
+.stiDesignerCheckContainerItem {
+  border-bottom: 1px dashed #c6c6c6;
+  background: #ffffff;
+  color: #444444;
+  margin: 15px 15px 0 15px;
+  font-family: initial;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/* Sort Container */
+.stiDesignerSortContainer {
+  background: #ffffff;
+  border-top: 1px dotted #c6c6c6;
+  overflow: auto;
+  padding: 2px;
+}
+
+/* Sort Panel */
+.stiDesignerSortPanel {
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  color: #444444;
+  font-family: initial;
+  font-size: 12px;
+  margin: 4px;
+}
+
+.stiDesignerSortPanelSelected {
+  border: 1px solid #97b2db;
+  background: #eeeeee;
+  color: #444444;
+  font-family: initial;
+  font-size: 12px;
+  margin: 4px;
+}
+
+/* Mouse */
+.stiDesignerStandartBigButton_Mouse {
+  min-height: 69px;
+  min-width: 50px;
+  cursor: default;
+  overflow: hidden;
+  background: transparent;
+  font-family: initial;
+  font-size: 11.5px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartBigButtonOver_Mouse {
+  min-height: 69px;
+  min-width: 50px;
+  cursor: default;
+  overflow: hidden;
+  background: #d5e1f2;
+  font-family: initial;
+  font-size: 11.5px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartBigButtonSelected_Mouse {
+  min-height: 69px;
+  min-width: 50px;
+  cursor: default;
+  overflow: hidden;
+  background: #c2d5f2;
+  font-family: initial;
+  font-size: 11.5px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartBigButtonDisabled_Mouse {
+  min-height: 69px;
+  min-width: 50px;
+  cursor: default;
+  overflow: hidden;
+  font-family: initial;
+  font-size: 11.5px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerStandartBigButton_Touch {
+  min-height: 69px;
+  min-width: 50px;
+  cursor: default;
+  overflow: hidden;
+  background: transparent;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartBigButtonOver_Touch {
+  min-height: 69px;
+  min-width: 50px;
+  cursor: default;
+  overflow: hidden;
+  background: #d5e1f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartBigButtonSelected_Touch {
+  min-height: 69px;
+  min-width: 50px;
+  cursor: default;
+  overflow: hidden;
+  background: #c2d5f2;
+  font-family: initial;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartBigButtonDisabled_Touch {
+  min-height: 69px;
+  min-width: 50px;
+  overflow: hidden;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerStandartSmallButton_Mouse {
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartSmallButtonOver_Mouse {
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartSmallButtonSelected_Mouse {
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartSmallButtonDisabled_Mouse {
+  height: 23px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerStandartSmallButton_Touch {
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartSmallButtonOver_Touch {
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartSmallButtonSelected_Touch {
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStandartSmallButtonDisabled_Touch {
+  height: 28px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mouse */
+.stiDesignerStatusPanelButton_Mouse {
+  height: 35px;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStatusPanelButtonOver_Mouse {
+  height: 35px;
+  background: #3b629b;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStatusPanelButtonSelected_Mouse {
+  height: 35px;
+  background: #11315f;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStatusPanelButtonDisabled_Mouse {
+  height: 35px;
+  color: #6b8ab8;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerStatusPanelButton_Touch {
+  height: 35px;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStatusPanelButtonOver_Touch {
+  height: 35px;
+  background: #3b629b;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStatusPanelButtonSelected_Touch {
+  height: 35px;
+  background: #11315f;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerStatusPanelButtonDisabled_Touch {
+  height: 35px;
+  color: #6b8ab8;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTabbedPane {
+  background: #ffffff;
+}
+
+.stiDesignerTabsPanel {
+  background: #ffffff;
+}
+
+.stiDesignerTabbedPaneContainer {
+  background: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+.stiDesignerTabbedPanePanel {
+  /*padding: 4px;*/
+}
+
+.stiDesignerTabsCell {
+  border: 0px;
+  border-bottom: 1px solid #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.stiDesignerTabsSelectedCell {
+  border: 0px;
+  border-bottom: 1px solid #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.stiDesignerTabbedPaneSeparator {
+  height: 15px;
+  width: 1px;
+  background: #c6c6c6;
+}
+
+.stiDesignerStandartTabHeader {
+  background: #c2d5f2;
+}
+
+/* Mouse */
+.stiDesignerStandartTab_Mouse {
+  white-space: nowrap;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.stiDesignerStandartTabOver_Mouse {
+  white-space: nowrap;
+  color: #19478a;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.stiDesignerStandartTabSelected_Mouse {
+  white-space: nowrap;
+  color: #19478a;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.stiDesignerStandartTabDisabled_Mouse {
+  white-space: nowrap;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+/* Touch */
+.stiDesignerStandartTab_Touch {
+  white-space: nowrap;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 6px 5px 6px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.stiDesignerStandartTabOver_Touch {
+  white-space: nowrap;
+  color: #19478a;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 6px 5px 6px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.stiDesignerStandartTabSelected_Touch {
+  white-space: nowrap;
+  color: #19478a;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 6px 5px 6px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.stiDesignerStandartTabDisabled_Touch {
+  white-space: nowrap;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 0px;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px 6px 5px 6px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+/* Mouse */
+.stiDesignerTextArea_Mouse {
+  font-size: 12px;
+  border: 1px solid #ababab;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #444444;
+  resize: none;
+}
+
+.stiDesignerTextAreaOver_Mouse {
+  font-size: 12px;
+  border: 1px solid #a3bde3;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #444444;
+  resize: none;
+}
+
+.stiDesignerTextAreaDisabled_Mouse {
+  font-size: 12px;
+  border: 1px solid #e1e1e1;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #f7f7f7;
+  resize: none;
+  color: #d6d3d6;
+}
+
+/* Touch */
+.stiDesignerTextArea_Touch {
+  font-size: 12px;
+  border: 1px solid #ababab;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #444444;
+  resize: none;
+}
+
+.stiDesignerTextAreaOver_Touch {
+  font-size: 12px;
+  border: 1px solid #a3bde3;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  resize: none;
+}
+
+.stiDesignerTextAreaDisabled_Touch {
+  font-size: 12px;
+  border: 1px solid #e1e1e1;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #f7f7f7;
+  resize: none;
+  color: #d6d3d6;
+}
+
+/* Mouse */
+.stiDesignerTextBoxEnumerator_Mouse {
+  border: 1px solid #ababab;
+  color: #444444;
+  background: #ffffff;
+}
+
+.stiDesignerTextBoxEnumeratorOver_Mouse {
+  border: 1px solid #a3bde3;
+  color: #444444;
+  background: #ffffff;
+}
+
+.stiDesignerTextBoxEnumeratorDisabled_Mouse {
+  border: 1px solid #e1e1e1;
+  color: #d6d3d6;
+  background: #ffffff;
+}
+
+/* Touch */
+.stiDesignerTextBoxEnumerator_Touch {
+  border: 1px solid #ababab;
+  color: #444444;
+  background: #ffffff;
+}
+
+.stiDesignerTextBoxEnumeratorOver_Touch {
+  border: 1px solid #a3bde3;
+  color: #444444;
+  background: #ffffff;
+}
+
+.stiDesignerTextBoxEnumeratorDisabled_Touch {
+  border: 1px solid #e1e1e1;
+  color: #d6d3d6;
+  background: #ffffff;
+}
+
+.stiDesignerTextBoxEnumerator_TextBoxDefault {
+  color: #444444;
+}
+
+.stiDesignerTextBoxEnumerator_TextBoxDisabled {
+  color: #d6d3d6;
+}
+
+/* Mouse */
+.stiDesignerTextBoxEnumerator_TextBox_Mouse {
+  font-size: 12px;
+  height: 21px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+}
+
+/* Touch */
+.stiDesignerTextBoxEnumerator_TextBox_Touch {
+  font-size: 12px;
+  height: 26px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+}
+
+/* Mouse */
+.stiDesignerTextBoxEnumeratorButton_Mouse {
+  height: 10px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTextBoxEnumeratorButtonOver_Mouse {
+  height: 10px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTextBoxEnumeratorButtonSelected_Mouse {
+  height: 10px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTextBoxEnumeratorButtonDisabled_Mouse {
+  height: 10px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerTextBoxEnumeratorButton_Touch {
+  height: 12px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTextBoxEnumeratorButtonOver_Touch {
+  height: 12px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #d5e1f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTextBoxEnumeratorButtonSelected_Touch {
+  height: 12px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #c2d5f2;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTextBoxEnumeratorButtonDisabled_Touch {
+  height: 12px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTextBoxEditButton {
+  border: 1px solid #ababab;
+  background: #ffffff;
+  border-left: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+}
+
+.stiDesignerTextBoxEditButtonDisabled {
+  border: 1px solid #e1e1e1;
+  background: #ffffff;
+  border-left: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 0px;
+}
+
+/*Margins Control*/
+.stiDesignerMarginsControl {
+  font-size: 12px;
+  background: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  color: #444444;
+}
+
+.stiDesignerMarginsControlInnerCell {
+  border-right: 1px solid #ababab;
+}
+
+.stiDesignerMarginsControlInnerCellOver {
+  border-right: 1px solid #a3bde3;
+}
+
+.stiDesignerMarginsControlDefault {
+  border: 1px solid #ababab;
+}
+
+.stiDesignerMarginsControlOver {
+  border: 1px solid #a3bde3;
+}
+
+.stiDesignerMarginsControlDisabled {
+  border: 1px solid #e1e1e1;
+}
+
+/* Mouse */
+.stiDesignerTextBox_Mouse {
+  font-size: 12px;
+  border: 1px solid #ababab;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #444444;
+}
+
+.stiDesignerTextBoxOver_Mouse {
+  font-size: 12px;
+  border: 1px solid #a3bde3;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #444444;
+}
+
+.stiDesignerTextBoxDisabled_Mouse {
+  font-size: 12px;
+  border: 1px solid #e1e1e1;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #f7f7f7;
+  color: #d6d3d6;
+}
+
+/* Touch */
+.stiDesignerTextBox_Touch {
+  font-size: 12px;
+  border: 1px solid #ababab;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #444444;
+}
+
+.stiDesignerTextBoxOver_Touch {
+  font-size: 12px;
+  border: 1px solid #a3bde3;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+}
+
+.stiDesignerTextBoxDisabled_Touch {
+  font-size: 12px;
+  border: 1px solid #e1e1e1;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  font-family: initial;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #f7f7f7;
+  color: #d6d3d6;
+}
+
+.stiDesignerToolButtonCell {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: bottom;
+}
+
+.stiDesignerToolButtonSelectedCell {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: bottom;
+}
+
+/* Mouse */
+.stiDesignerToolButton_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #19478a;
+  border: 0px;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolButtonOver_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #3b629b;
+  color: #ffffff;
+  border: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolButtonSelected_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #ffffff;
+  color: #19478a;
+  border: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFileButton_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #19478a;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFileButtonOver_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  color: #ffffff;
+  background: #3b629b;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerToolButton_Touch {
+  height: 26px;
+  white-space: nowrap;
+  background: #19478a;
+  border-bottom: 0px;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolButtonOver_Touch {
+  height: 26px;
+  white-space: nowrap;
+  background: #3b629b;
+  color: #ffffff;
+  border-bottom: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolButtonSelected_Touch {
+  height: 26px;
+  white-space: nowrap;
+  background: #ffffff;
+  color: #19478a;
+  border-bottom: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFileButton_Touch {
+  height: 26px;
+  white-space: nowrap;
+  background: #19478a;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerFileButtonOver_Touch {
+  height: 26px;
+  white-space: nowrap;
+  color: #ffffff;
+  background: #3b629b;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Dinamic ToolButton */
+
+/* Mouse */
+.stiDesignerToolButtonDinamic_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #11315f;
+  color: #ffffff;
+  border: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolButtonOverDinamic_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #3b629b;
+  color: #ffffff;
+  border: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolButtonSelectedDinamic_Mouse {
+  height: 24px;
+  white-space: nowrap;
+  background: #ffffff;
+  color: #19478a;
+  border: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+
+.stiDesignerToolButtonDinamic_Touch {
+  height: 26px;
+  white-space: nowrap;
+  background: #11315f;
+  border: 0px;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolButtonOverDinamic_Touch {
+  height: 26px;
+  white-space: nowrap;
+  background: #3b629b;
+  color: #ffffff;
+  border: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerToolButtonSelectedDinamic_Touch {
+  height: 26px;
+  white-space: nowrap;
+  background: #ffffff;
+  color: #19478a;
+  border: 0px;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 0 12px 0 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* ToolTip */
+.stiDesignerToolTip {
+  position: absolute;
+  border: 1px solid #c6c6c6;
+  padding: 0px;
+  background: #ffffff;
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  z-index: 44;
+  max-width: 300px;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.stiDesignerToolTipTextCell {
+  font-size: 12px;
+  font-family: initial;
+  color: #444444;
+  padding: 10px;
+  border: 0px;
+  border-bottom: 1px solid #c6c6c6;
+  white-space: normal;
+}
+
+/* Name In Source Tree */
+.stiDesignerConnectionsTree {
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+}
+
+/* ----  Mouse ----- */
+
+/* Opening Icon */
+.stiDesignerTreeItemIconOpening_Mouse {
+  margin: 0 3px 0 0;
+}
+
+/* Button */
+.stiDesignerTreeItemButton_Mouse {
+  border: 1px solid transparent;
+  padding: 0px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 11px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTreeItemButtonSelected_Mouse {
+  border: 1px solid #97b2db;
+  padding: 0px;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 11px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Button Image */
+.stiDesignerTreeItemButtonImage_Mouse {
+  border: 0px;
+  padding: 0px;
+  margin: 1px 2px 1px 2px;
+}
+
+/* Button Caption */
+.stiDesignerTreeItemButtonCaption_Mouse {
+  margin: 0px;
+  border: 0px;
+  padding: 0px 2px 0px 0px;
+}
+
+/* ----  Touch ----- */
+
+/* Opening Icon */
+.stiDesignerTreeItemIconOpening_Touch {
+  margin: 3px;
+}
+
+/* Button */
+.stiDesignerTreeItemButton_Touch {
+  border: 1px solid #ffffff;
+  padding: 0px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 11px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTreeItemButtonSelected_Touch {
+  border: 1px solid #97b2db;
+  padding: 0px;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 11px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerTreeItemButtonSelectedNotActive {
+  border: 1px solid #f0f0f0;
+  background: #f0f0f0;
+}
+
+/* Button Image */
+.stiDesignerTreeItemButtonImage_Touch {
+  border: 0px;
+  padding: 0px;
+  margin: 4px 2px 4px 4px;
+}
+
+/* Button Caption */
+.stiDesignerTreeItemButtonCaption_Touch {
+  margin: 0px;
+  border: 0px;
+  padding: 3px 5px 3px 2px;
+}
+
+/* TreeItem Icon For DragDrop */
+.stiDesignerTreeItemForDragDrop_Mouse {
+  border: 1px solid #97b2db;
+  padding: 0px;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  opacity: 0.6;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+/* TreeItem Icon For DragDrop */
+.stiDesignerTreeItemForDragDrop_Touch {
+  border: 1px solid #97b2db;
+  padding: 0px;
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  opacity: 0.6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+/* Mouse */
+.stiDesignerVerticalButton_Mouse {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 35px 0 0 -30px;
+  padding: 1px 2px 2px 2px;
+  border-bottom: 7px solid #19478a;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerVerticalButtonOver_Mouse {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 35px 0 0 -30px;
+  padding: 1px 2px 2px 2px;
+  border-bottom: 7px solid #3b629b;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerVerticalButtonSelected_Mouse {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 35px 0 0 -30px;
+  padding: 1px 2px 2px 2px;
+  border-bottom: 7px solid #11315f;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerVerticalButtonDisabled_Mouse {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 35px 0 0 -30px;
+  padding: 1px 2px 2px 2px;
+  border-bottom: 7px solid #6b8ab8;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Touch */
+.stiDesignerVerticalButton_Touch {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 35px 0 0 -30px;
+  padding: 1px 2px 2px 2px;
+  border-bottom: 7px solid #19478a;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerVerticalButtonOver_Touch {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 35px 0 0 -30px;
+  padding: 1px 2px 2px 2px;
+  border-bottom: 7px solid #3b629b;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerVerticalButtonSelected_Touch {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 35px 0 0 -30px;
+  padding: 1px 2px 2px 2px;
+  border-bottom: 7px solid #11315f;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiDesignerVerticalButtonDisabled_Touch {
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: 35px 0 0 -30px;
+  padding: 1px 2px 2px 2px;
+  border-bottom: 7px solid #6b8ab8;
+  color: #d6d3d6;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.wizardFormMainTable {
+  border: 0px;
+  padding: 0px;
+}
+
+.wizardFormInfoCell {
+  background: #ffffff;
+  border: 0px;
+  border-bottom: 1px dotted #c6c6c6;
+  padding: 0px;
+  height: 55px;
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.wizardFormStepsPanel {
+  background: #ffffff;
+  border: 0px;
+  border-right: 1px dotted #c6c6c6;
+  padding: 0px;
+  vertical-align: top;
+}
+
+.wizardFormWorkPanel {
+  overflow-y: auto;
+  height: 380px;
+  width: 550px;
+}
+
+.wizardFormColumnsOrderItemsContent {
+  overflow: auto;
+  height: 380px;
+  width: 520px;
+  border-right: 1px dotted #c6c6c6;
+}
+
+.wizardFormColumnsOrderButtonsContent {
+  height: 380px;
+  width: 29px;
+  text-align: center;
+}
+
+.wizardFormColumnsItemsContent {
+  overflow: auto;
+  height: 340px;
+  border-bottom: 1px dotted #c6c6c6;
+}
+
+.wizardFormColumnsItemsContentWithoutButtons {
+  overflow: auto;
+  height: 380px;
+}
+
+.wizardFormDataSourcesContent {
+  border-top: 1px dotted #c6c6c6;
+  overflow: auto;
+  height: 303px;
+  border-bottom: 1px dotted #c6c6c6;
+  background: #f9f9f9;
+}
+
+.wizardFormDataSourcesContentWithoutButtons {
+  border-top: 1px dotted #c6c6c6;
+  overflow: auto;
+  height: 343px;
+  background: #f9f9f9;
+}
+
+.wizardFormColumnsButtonsContent {
+  height: 39px;
+}
+
+.wizardFormColumnsButtonsTable {
+  border: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Totals */
+.wizardFormTotalsTable {
+  border: 1px solid #c6c6c6;
+  border-collapse: collapse;
+  margin: 5px;
+}
+
+/* Relations */
+.wizardRelationsFormItemsContainer {
+  overflow: auto;
+  width: 500px;
+  height: 350px;
+  border: 1px dotted #c6c6c6;
+}
+
+.wizardFormTotalsHeaderColumn {
+  color: #949494;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #eeeeee;
+  width: 380px;
+  text-align: center;
+  padding: 3px 0 3px 0;
+  border: 0px;
+  border-right: 1px dotted #c6c6c6;
+  white-space: nowrap;
+}
+
+.wizardFormTotalsHeaderFunction {
+  color: #949494;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  background: #eeeeee;
+  text-align: center;
+  border: 0px;
+  padding: 3px 0 3px 0;
+  white-space: nowrap;
+}
+
+.wizardFormTotalsCellColumn {
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  border: 0px;
+  margin: 0px;
+  border-bottom: 1px solid #c6c6c6;
+  padding: 0px;
+  white-space: nowrap;
+}
+
+.wizardFormTotalsDivColumn {
+  width: 380px;
+  overflow: hidden;
+  padding: 6px;
+  white-space: nowrap;
+}
+
+.wizardFormTotalsCellFunction {
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  border: 0px;
+  margin: 0px;
+  border-left: 1px solid #c6c6c6;
+  padding: 0 6px 0 6px;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+/* Themes */
+.wizardFormThemesTableSeparator {
+  border-bottom: 1px dotted #c6c6c6;
+  height: 1px;
+}
+
+/* Step Items */
+
+.wizardFormStepItem {
+  color: #444444;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 7px 40px 7px 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.wizardFormStepItemSelected {
+  background: #19478a;
+  color: #ffffff;
+  cursor: default;
+  font-family: initial;
+  font-size: 12px;
+  padding: 7px 40px 7px 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.wizardFormSeparator {
+  border-bottom: 1px dotted #c6c6c6;
+  margin: 2px 3px 2px 3px;
+  padding: 6px;
+  color: #19478a;
+  cursor: default;
+  font-family: initial;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.wizardFormHintText {
+  white-space: normal;
+  line-height: 1.5;
+  border: 0px;
+  font-family: initial;
+  font-size: 12px;
+  color: #696969;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.wizardStepPanel {
+  width: 100%;
+  height: 410px;
+  overflow-y: auto;
+}
+
+.wizardStepCaption {
+  background: #3b629b;
+  font: bold 12px Arial;
+  color: white;
+  padding-left: 30px;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+
+.wizardMappingText {
+  font: bold 12px Arial;
+  text-align: right;
+  padding: 8px;
+}
+
+.wizardLablesText {
+  font: 12px Arial;
+  text-align: left;
+  padding: 8px;
+}
+
+/** SVG **/
+.wizardStepEllipse {
+  fill: #3b629b;
+}
+
+.wizardStepEllipseChecked {
+  fill: #11315f;
+}
+
+.wizardStepEllipseInactive {
+  fill: #ebebeb;
+}
+
+.wizardStepNumber {
+  text-anchor: middle;
+  font: bold 14px Arial;
+}
+
+.wizardStepText {
+  fill: #3b629b;
+  text-anchor: middle;
+  font: bold 12px Arial;
+}
+
+.wizardStepTextChecked {
+  fill: #11315f;
+  text-anchor: middle;
+  font: bold 12px Arial;
+}
+
+.wizardStepTextInactive {
+  fill: #898989;
+  text-anchor: middle;
+  font: bold 12px Arial;
+}
+
+.wizardStepLine {
+  stroke: #3b629b;
+}
+
+.wizardStepLineCheked {
+  stroke: #11315f;
+}
+
+.wizardStepLineInactive {
+  stroke: #ebebeb;
+}
+
+/* Mouse */
+.stiDesignerZoomScale_Mouse {
+  position: relative;
+  cursor: default;
+  height: 20px;
+}
+
+.stiDesignerZoomScaleLine_Mouse {
+  position: absolute;
+  top: 10px;
+  cursor: default;
+  height: 1px;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.stiDesignerZoomScaleButton_Mouse {
+  position: absolute;
+  top: 3px;
+  cursor: default;
+  height: 15px;
+  width: 5px;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.stiDesignerZoomScaleButtonOver_Mouse {
+  position: absolute;
+  top: 3px;
+  cursor: default;
+  height: 15px;
+  width: 5px;
+  background: #c2d5f2;
+  z-index: 100;
+}
+
+.stiDesignerZoomScaleButtonDisabled_Mouse {
+  position: absolute;
+  top: 3px;
+  cursor: default;
+  height: 15px;
+  width: 5px;
+  background: #6b8ab8;
+  z-index: 1;
+}
+
+/* Touch */
+.stiDesignerZoomScale_Touch {
+  position: relative;
+  cursor: default;
+  height: 30px;
+}
+
+.stiDesignerZoomScaleLine_Touch {
+  position: absolute;
+  top: 15px;
+  cursor: default;
+  height: 1px;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.stiDesignerZoomScaleButton_Touch {
+  position: absolute;
+  top: 0px;
+  cursor: default;
+  height: 30px;
+  width: 30px;
+  z-index: 100;
+}
+
+.stiDesignerZoomScaleButtonOver_Touch {
+  position: absolute;
+  top: 0px;
+  cursor: default;
+  height: 30px;
+  width: 30px;
+  z-index: 100;
+}
+
+.stiDesignerZoomScaleButtonDisabled_Touch {
+  position: absolute;
+  top: 0px;
+  cursor: default;
+  height: 30px;
+  width: 30px;
+  z-index: 1;
+}
+
+.stiDesignerZoomScaleMiddle {
+  position: absolute;
+  height: 7px;
+  background: #ffffff;
+  width: 1px;
+  z-index: 1;
+}
+
+.stiDataColumnContainer {
+  font-family: initial;
+  font-size: 12px;
+  color: #d6d3d6;
+  border: 1px dashed #c6c6c6;
+  text-align: center;
+  white-space: nowrap;
+  padding: 1px;
+  position: relative;
+}
+
+.stiDataColumnContainerOver {
+  border: 1px dashed #a3bde3;
+}
+
+.stiMapManualContainer {
+  border: 1px dashed #ababab;
+}
+
+.stiMapScrollContainer {
+  overflow: auto;
+}
+
+.stiMapDataGridHeader td {
+  background: #eeeeee;
+  color: #444444;
+  font-family: initial;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 4px 0 4px 0;
+  text-align: center;
+  border-bottom: 1px solid #c6c6c6;
+  border-right: 1px solid #c6c6c6;
+}
+
+.stiMapDataGrid td {
+  /*border: 1px solid #c6c6c6;*/
+}
+
+/* Mouse */
+.stiDesignerWizardButton_Mouse {
+  background: #a0a0a0;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerWizardButtonOver_Mouse {
+  background: #3b629b;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerWizardButtonSelected_Mouse {
+  background: #3b629b;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerWizardButtonDisabled_Mouse {
+  background: #ffffff;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+/* Touch */
+.stiDesignerWizardButton_Touch {
+  background: #a0a0a0;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerWizardButtonOver_Touch {
+  background: #3b629b;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerWizardButtonSelected_Touch {
+  background: #3b629b;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerWizardButtonDisabled_Touch {
+  background: #ffffff;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+/* Theme buttons*/
+/* Mouse */
+.stiDesignerWizardThemeButton_Mouse {
+  height: 210px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+  border: 1px solid white;
+}
+
+.stiDesignerWizardThemeButtonOver_Mouse {
+  height: 210px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+  border: 1px solid #ef9341;
+}
+
+.stiDesignerWizardThemeButtonSelected_Mouse {
+  height: 210px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+  border: 1px solid #ef9341;
+}
+
+.stiDesignerWizardThemeButtonDisabled_Mouse {
+  height: 210px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+  border: 1px solid white;
+}
+
+/* Touch */
+.stiDesignerWizardThemeButton_Touch {
+  height: 210px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+  border: 1px solid white;
+}
+
+.stiDesignerWizardThemeButtonOver_Touch {
+  height: 210px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+  border: 1px solid #ef9341;
+}
+
+.stiDesignerWizardThemeButtonSelected_Touch {
+  height: 210px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+  border: 1px solid #ef9341;
+}
+
+.stiDesignerWizardThemeButtonDisabled_Touch {
+  height: 210px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+  border: 1px solid white;
+}
+
+.stiBlocklyContainer {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  margin: 10px;
+}
+
+.stiBlocklyHost {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.stiBlocklyDivEmpty {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 70px;
+}
+
+.stiBlocklyImageEmpty {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  left: 50%;
+  height: 64px;
+  width: 64px;
+}
+
+.stiBlocklyTextEmpty {
+  font-family: initial;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+.stiDesignerAccountChildPanel {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-right: 1px dotted #c6c6c6;
+  min-width: 450px;
+}
+
+.stiDesignerAccountFooterPanel {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  border-top: 1px dotted #c6c6c6;
+  text-align: right;
+}
+
+.stiDesignerTeamUsersCell {
+  font-family: initial;
+  font-size: 12px;
+  padding: 12px 25px 12px 12px;
+  border-top: 1px solid #c6c6c6;
+  white-space: nowrap;
+}
+
+.stiDesignerTeamUsersCellOver {
+  background: #d5e1f2;
+}
+
+.stiDesignerTeamUsersCellSelect {
+  background: #c2d5f2;
+}
+
+.stiDesignerAccountPanelHeader {
+  font-family: initial;
+  font-size: 18px;
+  color: #19478a;
+  padding: 16px 12px 10px 12px;
+}
+
+.stiDesignerAccountInviteFormFooter {
+  font-family: initial;
+  font-size: 12px;
+  color: #ababab;
+  padding: 12px;
+  min-width: 400px;
+}
+
+.stiDesignerSvgButton {
+  color: #ffffff;
+  fill: #19478a;
+}
+
+.stiDesignerSvgButtonOver {
+  color: #ffffff;
+  fill: #3b629b;
+}
+
+.stiDesignerSvgButtonDisabled {
+  color: #6b8ab8;
+  fill: #eeeeee;
+}
+
+.stiDesignerSvgButtonSeparator {
+  stroke: #3b629b;
+}
+
+.stiDesignerSvgButtonArrow {
+  fill: #19478a;
+  stroke: #19478a;
+  stroke-width: 1;
+}
+
+.stiDesignerSliderControl {
+  height: 25px;
+  background: #ffffff;
+  position: relative;
+}
+
+.stiDesignerSliderControlLine {
+  position: absolute;
+  background: #ababab;
+  height: 1px;
+  width: 100%;
+  top: 12px;
+}
+
+.stiDesignerSliderControlButton {
+  position: absolute;
+  top: 2px;
+  height: 21px;
+}
+
+.stiDesignerSliderControlButtonDefault {
+  background: #ababab;
+}
+
+.stiDesignerSliderControlButtonOver {
+  background: #a3bde3;
+}
+
+.stiDesignerSliderValueBox {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  white-space: normal;
+  border: 0px;
+  font-family: initial;
+  font-size: 12px;
+  text-align: center;
+  color: #ababab;
+}
+
+/* Mouse */
+.stiDesignerCloudWizardButton_Mouse {
+  background: #19478a;
+  height: 25px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerCloudWizardButtonOver_Mouse {
+  background: #3b629b;
+  height: 25px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerCloudWizardButtonSelected_Mouse {
+  background: #11315f;
+  height: 25px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerCloudWizardButtonDisabled_Mouse {
+  background: #ffffff;
+  height: 25px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+/* Touch */
+.stiDesignerCloudWizardButton_Touch {
+  background: #19478a;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerCloudWizardButtonOver_Touch {
+  background: #3b629b;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerCloudWizardButtonSelected_Touch {
+  background: #3b629b;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+
+.stiDesignerCloudWizardButtonDisabled_Touch {
+  background: #ffffff;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  font-family: initial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  margin: 3px;
+}
+body {
+  font-family: Microsoft YaHei, PingFang SC, Helvetica Neue, Helvetica,
+    Hiragino Sans GB, Arial, sans-serif !important;
+}
+.stiDesignerMainPanel {
+  background-color: #eceff3;
+}
+.stiDesignerMainPanel .stiDesignerToolBar {
+  height: 42px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: initial;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarTitle {
+  color: #666;
+  font-size: 16px;
+  padding-left: 5px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarTitle .fileMenu {
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 6px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarTitle .fileMenu ul.menu {
+  position: absolute;
+  z-index: 45;
+  width: 156px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  ul.menu
+  li.menuItem {
+  padding: 0 5px;
+  margin: 5px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  ul.menu
+  li.menuItem:hover {
+  background-color: var(--ant-primary-color, #2796ff);
+  border-radius: 4px;
+}
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  ul.menu
+  li.menuItem:hover
+  > span {
+  color: #ffffff;
+}
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  ul.menu
+  li::before,
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  ul.menu
+  li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+}
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  ul.menu
+  li::before {
+  right: 100%;
+}
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  ul.menu
+  li::after {
+  left: 100%;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarTitle .fileMenu .submenu {
+  width: 172px !important;
+}
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  .submenu
+  .menuItem {
+  justify-content: initial !important;
+}
+.stiDesignerMainPanel
+  .stiDesignerToolBar
+  .toolBarTitle
+  .fileMenu
+  .submenu
+  .menuItem
+  svg {
+  margin-right: 10px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarTitle .fileMenu .fileSubmenu {
+  width: 172px !important;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarTitle .fileMenu svg {
+  height: 21px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarTitle .titleText {
+  margin: auto 0;
+  font-weight: bold;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarShortCuts {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .topBarButton {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .topBarButton svg {
+  width: 16px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .topBarButton svg.arrow {
+  width: 10px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .topBarButton span {
+  margin: 0 4px;
+  font-size: 14px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .topBarButton:hover {
+  background-color: #ebebeb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .TopBarButtonWithoutArrow {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .TopBarButtonWithoutArrow svg {
+  width: 16px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .TopBarButtonWithoutArrow span {
+  font-size: 14px;
+  margin-left: 4px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .TopBarButtonWithoutArrow:hover {
+  background-color: #ebebeb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .disable {
+  color: #b8b8b8;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .saveButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 62px;
+  height: 28px;
+  margin: 0px 5px;
+  background-color: var(--ant-primary-color, #2796ff);
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .saveButton svg {
+  width: 16px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .aligmentMenu {
+  display: none;
+  z-index: 45;
+  position: absolute;
+  width: 125px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+}
+.stiDesignerMainPanel .stiDesignerToolBar .aligmentMenu .topBarButton {
+  justify-content: initial;
+  width: 100%;
+  padding: 0px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .aligmentMenu .topBarButton img {
+  margin: 0px 5px;
+  width: 16px;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+}
+.stiDesignerMainPanel .stiDesignerToolBar .toolBarRight .preview {
+  margin: 0px 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.stiDesignerMainPanel .stiDesignerToolbox {
+  border-right: initial;
+}
+.stiDesignerMainPanel .stiDesignerToolbox .toolBoxBtn {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+}
+.stiDesignerMainPanel .stiDesignerToolbox .toolBoxBtn:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+.stiDesignerMainPanel .stiDesignerToolbox .toolBoxBtn:hover svg path {
+  fill: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel .stiDesignerToolbox .toolBoxBtn:hover span {
+  color: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel .stiDesignerToolbox .toolBoxBtn svg {
+  width: 14px;
+  margin: 0px auto;
+  margin-bottom: 4px;
+}
+.stiDesignerMainPanel .stiDesignerToolbox .toolBoxBtn span {
+  color: initial;
+  font-size: 12px;
+  margin: 0px auto;
+}
+.stiDesignerMainPanel .stiDesignerToolbox .selected .ospSvg path {
+  fill: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel .stiDesignerToolbox .selected span {
+  color: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel .stiDesignerToolbox .active {
+  color: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel .stiDesignerToolButton_Mouse {
+  background-color: #ffffff;
+}
+.stiDesignerMainPanel .ospPropertiesPanelHeader {
+  display: flex;
+  align-items: center;
+  height: 42px;
+}
+.stiDesignerMainPanel .ospPropertiesPanelHeader .selected {
+  color: var(--ant-primary-color, #2796ff) !important;
+}
+.stiDesignerMainPanel .ospPropertiesPanelHeader .headerTab {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.stiDesignerMainPanel .stiDesignerPropertiesPanel {
+  border-right: initial;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesPanel
+  .stiDesignerPropertiesPanelHeader {
+  border-bottom: initial;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666666;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesPanel
+  .stiDesignerPropertiesPanelHeader
+  .close {
+  cursor: pointer;
+  padding-right: 10px;
+}
+.stiDesignerMainPanel .stiDesignerPropertiesPanel .stiDesignerTextBox_Mouse {
+  height: 30px !important;
+  border: 1px solid #dddddd;
+  width: calc(100% - 20px);
+  margin: 0 5px;
+  border-radius: 4px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesPanel
+  .stiDesignerTextBoxOver_Mouse {
+  height: 30px !important;
+  border: 1px solid #dddddd;
+  width: calc(100% - 20px);
+  margin: 0 5px;
+  border-radius: 4px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesPanel
+  .stiDesignerPropertiesPanelInnerContent
+  .dictToolbar {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  height: 42px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesPanel
+  .stiDesignerPropertiesPanelInnerContent
+  .dictToolbar
+  .dictToolbarBtn {
+  height: 30px;
+  align-items: center;
+  border: 1px solid #e4e4e4;
+  margin: 0 7px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #595959;
+  display: flex;
+  cursor: pointer;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesPanel
+  .stiDesignerPropertiesPanelInnerContent
+  .dictToolbar
+  .dictToolbarBtn
+  span {
+  margin: 0 5px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesPanel
+  .stiDesignerPropertiesPanelInnerContent
+  .dictToolbar
+  .dictToolbarBtn
+  svg {
+  margin-right: 2px;
+  width: 10px;
+}
+.stiDesignerMainPanel .stiDesignerStatusPanel {
+  color: #666;
+}
+.stiDesignerMainPanel
+  .stiDesignerStatusPanel
+  .stiDesignerStatusPanelButton_Mouse {
+  color: #666;
+}
+.stiDesignerMainPanel .stiDesignerStatusPanel img {
+  background-color: #666;
+}
+.stiDesignerMainPanel
+  .stiDesignerStatusPanel
+  .stiDesignerStatusPanelButtonOver_Mouse {
+  background-color: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel .stiDesignerStatusPanel .stiDesignerZoomScaleLine_Mouse {
+  background-color: #666;
+}
+.stiDesignerMainPanel .stiDesignerStatusPanel .stiDesignerZoomScaleMiddle {
+  background-color: #666;
+}
+.stiDesignerMainPanel
+  .stiDesignerStatusPanel
+  .stiDesignerZoomScaleButton_Mouse {
+  background-color: #666;
+}
+.stiDesignerMainPanel .stiDesignerPaintPanel {
+  background-color: #eceff3;
+}
+.stiDesignerMainPanel .stiDesignerPropertiesGroup {
+  background-color: #ffffff;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .stiDesignerPropertiesGroupHeaderButtonSelected_Mouse {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .stiDesignerPropertiesGroupHeaderButton_Mouse {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .stiDesignerPropertiesGroupHeaderButtonOver_Mouse {
+  cursor: pointer;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .stiDesignerPropertiesGroupContainer {
+  background-color: #ffffff;
+}
+.stiDesignerMainPanel .stiDesignerPropertiesGroup .groupHeader {
+  color: #666;
+  padding: 4px 16px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.stiDesignerMainPanel .stiDesignerPropertiesGroup .groupHeader svg {
+  transition: transform 0.24s;
+  margin-right: 12px;
+}
+.stiDesignerMainPanel .stiDesignerPropertiesGroup .rotate svg {
+  transform: rotate(90deg);
+}
+.stiDesignerMainPanel .stiDesignerPropertiesGroup .ospControlsGroupItems {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 16px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .ospControlsGroupItems
+  .stiDesignerMenuStandartItem_Mouse,
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .ospControlsGroupItems
+  .stiDesignerMenuStandartItemOver_Mouse {
+  height: 34px;
+  background-color: #f6f7f8;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .ospControlsGroupItems
+  .stiDesignerMenuStandartItem_Mouse:hover,
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .ospControlsGroupItems
+  .stiDesignerMenuStandartItemOver_Mouse:hover {
+  background-color: #e9f4ff;
+}
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .ospControlsGroupItems
+  .stiDesignerMenuStandartItem_Mouse
+  span,
+.stiDesignerMainPanel
+  .stiDesignerPropertiesGroup
+  .ospControlsGroupItems
+  .stiDesignerMenuStandartItemOver_Mouse
+  span {
+  color: #595959;
+  font-size: 14px;
+}
+.stiDesignerMainPanel .stiDesignerPropertiesGroup .rightGroup {
+  padding: 4px;
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel {
+  border-bottom: initial;
+  display: flex;
+  height: 42px;
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel .stiDesignerPagesContainer {
+  position: initial;
+  right: initial;
+  top: initial;
+  bottom: initial;
+  display: flex;
+  flex: 3;
+  height: 42px;
+  align-items: center;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .stiDesignerPagesContainer
+  .selected {
+  background-color: var(--ant-primary-color, #2796ff) !important;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .stiDesignerPagesContainer
+  .selected
+  .name {
+  color: #ffffff;
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel .stiDesignerPagesContainer .add {
+  cursor: pointer;
+  margin: 0 4px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .stiDesignerPagesContainer
+  .pageButton {
+  cursor: pointer;
+  width: 74px;
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  margin: 0px 4px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .stiDesignerPagesContainer
+  .pageButton
+  .name {
+  font-size: 12px;
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel .pageTools {
+  height: 42px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel .pageTools .zoomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80px;
+  margin: 0 4px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .zoomContainer
+  .zoomNum {
+  font-size: 12px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel .pageTools .zoomContainer .zoom {
+  border-radius: 50%;
+  width: 16px;
+  background-color: #f0f0f0;
+  height: 16px;
+  cursor: pointer;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .zoomContainer
+  .zoom:hover {
+  background-color: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .zoomContainer
+  .zoom:hover
+  svg
+  g {
+  stroke: #ffffff;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .zoomContainer
+  .zoom
+  svg {
+  margin: 4px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .zoomContainer
+  .zoomMenu {
+  display: none;
+  z-index: 45;
+  position: absolute;
+  width: 30px;
+  top: 32px;
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .zoomContainer
+  .zoomMenu
+  .zoomMenuItem:hover
+  svg
+  path {
+  fill: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .zoomContainer
+  .zoomMenu
+  .zoomMenuItem:hover
+  p {
+  color: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .zoomContainer
+  .zoomMenu
+  svg {
+  width: 20px;
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel .pageTools .pageToolBtn {
+  cursor: pointer;
+  margin: 0px 4px;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .pageToolBtn:hover
+  svg
+  path {
+  fill: #ffffff;
+}
+.stiDesignerMainPanel
+  .stiDesignerPagesPanel
+  .pageTools
+  .pageToolBtn:hover
+  svg
+  circle {
+  fill: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel .pageTools .selected svg path {
+  fill: #ffffff;
+}
+.stiDesignerMainPanel .stiDesignerPagesPanel .pageTools .selected svg circle {
+  fill: var(--ant-primary-color, #2796ff);
+}
+.stiDesignerMainPanel .stiDesignerWorkPanel {
+  border-bottom: initial;
+}
+.stiDesignerMainPanel .stiDesignerPropertiesPanelRight {
+  border-left: initial;
+}
+
+.stiJsViewerBookmarksPanel {
+  z-index: 2;
+  left: 0;
+  float: left;
+  position: absolute;
+  overflow: visible;
+  white-space: nowrap;
+  color: #202020;
+}
+
+.stiJsViewerBookmarksPanelSeparated {
+  border-right: 1px solid #c6c6c6;
+}
+
+.stiJsViewerBookmarksContainer {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  position: absolute;
+  overflow: auto;
+  font-family: Arial;
+  font-size: 12px;
+  white-space: nowrap;
+  background: #ffffff;
+  padding: 3px 0px 0px 3px;
+}
+
+.stiJsViewerBookmarksContainerSimple {
+  border: 1px solid #c6c6c6;
+  margin-top: 2px;
+}
+
+.stiJsViewerBookmarksContainer img {
+  border: 0px;
+  vertical-align: middle;
+}
+
+.stiJsViewerBookmarksContainer a {
+  color: #444444;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.stiJsViewerBookmarksContainer a.node,
+.stiJsViewerBookmarksContainer a.nodeSel {
+  white-space: nowrap;
+  padding: 2px;
+}
+
+.stiJsViewerBookmarksContainer a.node:hover,
+.stiJsViewerBookmarksContainer a.nodeSel:hover {
+  color: #444444;
+  text-decoration: underline;
+}
+
+.stiJsViewerBookmarksContainer a.nodeSel {
+  background-color: #c2d5f2;
+}
+
+.stiJsViewerBookmarksContainer a.clip {
+  overflow: hidden;
+}
+
+.stiJsViewerBookmarksLabel {
+  position: absolute;
+  z-index: 150;
+  border: 2px solid #8a8a8a;
+  opacity: 0.7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* Mouse */
+.stiJsViewerCheckBox {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 12px;
+  color: #444444;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  color: #202020;
+}
+
+.stiJsViewerCheckBoxDisabled {
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  border: 0;
+}
+
+.stiJsViewerCheckBoxImageBlock {
+  border: 1px solid #ababab;
+  background: #ffffff;
+}
+
+.stiJsViewerCheckBoxImageBlockOver {
+  border: 1px solid #a3bde3;
+  background: #d5e1f2;
+}
+
+.stiJsViewerCheckBoxImageBlockDisabled {
+  border: 1px solid #b7b4b7;
+  background: #f7f2f7;
+}
+
+.stiJsViewerDatePickerSeparator {
+  border-top: 1px solid #c6c6c6;
+}
+
+.stiJsViewerDatePickerDayOfWeekCell {
+  white-space: nowrap;
+  cursor: default;
+  font-size: 12px;
+  padding: 3px;
+  text-align: center;
+  font-weight: bold;
+  border: 0 none;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+/* Mouse */
+.stiJsViewerDatePickerDayButton {
+  cursor: default;
+  border: 1px solid transparent;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerDatePickerDayButtonDefault {
+  background: transparent;
+}
+
+.stiJsViewerDatePickerDayButtonOver {
+  background: #d5e1f2;
+  border: 1px solid #d5e1f2;
+}
+
+.stiJsViewerDatePickerDayButtonSelected {
+  background: #c2d5f2;
+  border: 1px solid #c2d5f2;
+}
+
+.stiJsViewerDatePickerDayButtonDisabled {
+  color: #d6d3d6;
+}
+
+/* Mouse */
+.stiJsViewerDropDownList {
+  border: 1px solid #ababab;
+  background: #ffffff;
+}
+
+.stiJsViewerDropDownListOver {
+  border: 1px solid #a3bde3;
+  background: #ffffff;
+}
+
+.stiJsViewerDropDownListDisabled {
+  border: 1px solid #b7b4b7;
+  background: #ffffff;
+}
+
+.stiJsViewerDropDownList_TextBox {
+  font-size: 12px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #202020;
+}
+
+.stiJsViewerDropDownListImage {
+  height: 17px;
+  width: 32px;
+  margin: 0 3px 0 3px;
+}
+
+/* Mouse */
+.stiJsViewerDropDownListButton {
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerDropDownListButtonDefault {
+  background: #ffffff;
+}
+
+.stiJsViewerDropDownListButtonOver {
+  background: #d5e1f2;
+}
+
+.stiJsViewerDropDownListButtonSelected {
+  background: #c2d5f2;
+}
+
+.stiJsViewerDropDownListButtonDisabled {
+  color: #d6d3d6;
+}
+
+.stiJsViewerForm {
+  position: absolute;
+  border: 1px solid #ababab;
+  background: #ffffff;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  text-align: left;
+  color: #202020;
+}
+
+.stiJsViewerFormHeader {
+  background: #ffffff;
+  font-family: Corbel;
+  font-size: 25px;
+  color: #587cb1;
+  text-align: center;
+  cursor: default;
+}
+
+.stiJsViewerFormContainer {
+  padding: 5px 15px 15px 15px;
+  background: #ffffff;
+}
+
+.stiJsViewerFormSeparator {
+  height: 0px;
+  border-top: 1px dashed #c8c8c8;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.stiJsViewerFormButtonsPanel {
+  float: right;
+}
+
+.stiJsViewerMessagesFormDescription {
+  line-height: 1.2;
+  border: 0px;
+  margin: 0px;
+  padding: 20px 30px 20px 0;
+  overflow: hidden;
+  min-width: 350px;
+  max-width: 650px;
+  font-family: Arial;
+  font-size: 12px;
+  text-align: left;
+  cursor: default;
+}
+
+.stiJsViewerNotificationFormDescription {
+  text-align: center;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #888888;
+  width: 450px;
+  padding: 10px 50px 10px 50px;
+}
+
+.stiJsViewerNotificationFormMessage {
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #587cb1;
+  width: 450px;
+  padding: 10px 50px 10px 50px;
+}
+
+/* Mouse */
+.stiJsViewerFormButton {
+  height: 23px;
+  cursor: default;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerFormButtonDefault {
+  background: #ffffff;
+  border: 1px solid #ababab;
+}
+
+.stiJsViewerFormButtonOver {
+  background: #d5e1f2;
+  border: 1px solid #a3bde3;
+}
+
+.stiJsViewerFormButtonSelected {
+  background: #c2d5f2;
+  border: 1px solid #a3bde3;
+}
+
+.stiJsViewerFormButtonDisabled {
+  background: transparent;
+  border: 1px solid #b7b4b7;
+}
+
+.stiJsViewerGroupPanelContainer {
+  background: #ffffff;
+  border-left: 1px solid #ababab;
+  border-right: 1px solid #ababab;
+  border-bottom: 1px solid #ababab;
+}
+
+/* Mouse */
+.stiJsViewerHyperlinkButton {
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerHyperlinkButtonDefault {
+  color: #5a83ad;
+}
+
+.stiJsViewerHyperlinkButtonOver {
+  text-decoration: underline;
+  color: #5a83ad;
+}
+
+.stiJsViewerHyperlinkButtonSelected {
+  color: #5a83ad;
+}
+
+.stiJsViewerHyperlinkButtonDisabled {
+  color: #5a83ad;
+}
+
+.stiJsViewerParentMenu {
+  z-index: 35;
+  position: absolute;
+}
+
+.stiJsViewerMenu,
+.stiJsViewerDropdownMenu,
+.stiJsViewerDropdownPanel {
+  position: absolute;
+  padding: 1px;
+  font-size: 12px;
+  border: 1px solid #ababab;
+  background: #ffffff;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  color: #202020;
+}
+
+.stiJsViewerVerticalMenuSeparator {
+  height: 1px;
+  background: #d4d4d4;
+  margin: 1px 2px 1px 30px;
+}
+
+/* Mouse */
+.stiJsViewerMenuStandartItem {
+  white-space: nowrap;
+  cursor: default;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerMenuStandartItemOver {
+  background: #d5e1f2;
+}
+
+.stiJsViewerMenuStandartItemSelected {
+  background: #c2d5f2;
+}
+
+.stiJsViewerMenuStandartItemDisabled {
+  color: #d6d3d6;
+}
+
+.stiJsViewerClearAllStyles {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  line-height: normal;
+}
+
+.stiJsViewerMainPanel {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.stiJsViewerReportPanel {
+  z-index: 1;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  min-height: 100px;
+  border-collapse: separate;
+}
+
+.stiJsViewerReportPanel table,
+.stiJsViewerReportPanel td {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.stiJsViewerDisabledPanel {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background: white;
+  filter: alpha(Opacity=10);
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+}
+
+.stiJsViewerAboutPanel {
+  width: 520px;
+  z-index: 500;
+  text-align: center;
+  position: absolute;
+  border: 1px solid #ababab;
+  background: #ffffff;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.stiJsViewerAboutPanelHeader {
+  width: 100%;
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center;
+  color: #587cb1;
+  margin-top: 35px;
+}
+
+.stiJsViewerAboutPanelCopyright {
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 12px;
+  color: #444444;
+  margin-top: 30px;
+}
+
+.stiJsViewerAboutPanelVersion {
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 12px;
+  color: #444444;
+  margin-top: 20px;
+}
+
+.stiJsViewerAboutPanelStiLink {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-family: Arial;
+  font-size: 12px;
+  margin: 10px 0 12px 0;
+  color: #19478a;
+  text-decoration: underline;
+}
+
+.stiJsViewerProcessImage {
+  z-index: 45;
+  position: absolute;
+  border: 1px solid #0070b8;
+  background: #ffffff;
+  font-size: 12px;
+  color: #0070b8;
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+
+.stiJsViewerPageShadow {
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.stiJsViewerCaptionControls {
+  white-space: nowrap;
+  padding: 0 25px 0 15px;
+  border: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+.stiEditableField {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.stiEditableFieldSelected {
+  background: #f5efd5;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.stiEditableTextArea {
+  background: #f5efd5;
+  border: 0px;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  outline: 0px;
+}
+
+.stiJsViewerFindLabel {
+  position: absolute;
+  z-index: 150;
+  border: 2px solid #8a8a8a;
+  background: yellow;
+  opacity: 0.6;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.stiJsViewerContainerHideScroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.stiJsViewerContainerHideScroll::-webkit-scrollbar {
+  width: 0px;
+}
+
+.stiJsViewerParametersPanel {
+  cursor: default;
+  position: absolute;
+  z-index: 2;
+  color: #202020;
+}
+
+.stiJsViewerParametersPanelTop {
+  width: 100%;
+}
+
+.stiJsViewerParametersPanelSeparatedTop {
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.stiJsViewerParametersPanel td {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.stiJsViewerParametersPanel table {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.stiJsViewerInnerParametersPanelLeft {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background: #ffffff;
+  overflow: auto;
+}
+
+.stiJsViewerInnerParametersPanelSimple {
+  border: 1px solid #c6c6c6;
+}
+
+.stiJsViewerInnerParametersPanelSeparatedLeft {
+  border-right: 1px solid #c6c6c6;
+}
+
+.stiJsViewerInnerContainerParametersPanel {
+  font-size: 12px;
+  padding: 10px;
+  background: #ffffff;
+  border-collapse: separate;
+  overflow: auto;
+}
+
+/* -------------------- Menu -----------------*/
+
+.stiJsViewerParametersMenuInnerTable {
+  border: 0px;
+  padding: 0px;
+  border-collapse: separate;
+  color: #202020;
+}
+
+.stiJsViewerParametersMenuInnerTable td {
+  padding: 0px;
+}
+
+.stiJsViewerParametersMenuSeparator {
+  height: 1px;
+  width: 100%;
+  background: #d4d4d4;
+}
+
+.stiJsViewerParametersMenuItem td,
+.stiJsViewerParametersMenuItemOver td,
+.stiJsViewerParametersMenuItem table,
+.stiJsViewerParametersMenuItemOver table,
+.stiJsViewerParametersMenuItemPressed table,
+.stiJsViewerParametersMenuItemPressed td {
+  border: 0px;
+  padding: 0px;
+}
+
+.stiJsViewerParametersMenuItem,
+.stiJsViewerParametersMenuItemOver,
+.stiJsViewerParametersMenuItemPressed {
+  padding: 1px;
+}
+
+.stiJsViewerParametersMenuItem .stiJsViewerParametersMenuItemInnerTable {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-collapse: separate;
+  box-sizing: border-box;
+}
+
+.stiJsViewerParametersMenuItemOver .stiJsViewerParametersMenuItemInnerTable {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  background: #d5e1f2;
+  border: 1px solid #d5e1f2;
+  white-space: nowrap;
+  overflow: hidden;
+  border-collapse: separate;
+  box-sizing: border-box;
+}
+
+.stiJsViewerParametersMenuItemPressed .stiJsViewerParametersMenuItemInnerTable {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  background: #c2d5f2;
+  border: 1px solid #c2d5f2;
+  white-space: nowrap;
+  overflow: hidden;
+  border-collapse: separate;
+  box-sizing: border-box;
+}
+
+.js_viewer_loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+
+.js_viewer_loader_default {
+  border-top: 6px solid rgba(25, 71, 138, 0.2);
+  border-right: 6px solid rgba(25, 71, 138, 0.2);
+  border-bottom: 6px solid rgba(25, 71, 138, 0.2);
+  border-left: 6px solid #19478a;
+}
+
+.js_viewer_loader_light {
+  border-top: 6px solid rgba(238, 238, 238, 0.2);
+  border-right: 6px solid rgba(238, 238, 238, 0.2);
+  border-bottom: 6px solid rgba(238, 238, 238, 0.2);
+  border-left: 6px solid #eeeeee;
+}
+
+.js_viewer_loader,
+.js_viewer_loader:after {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.stiProgressText {
+  position: absolute;
+  top: 88px;
+  left: 0px;
+  height: 40px;
+  width: 100%;
+  font-family: 'Arial';
+  font-size: 20px;
+  text-align: center;
+  color: #444444;
+}
+
+.stiJsViewerRadioButton {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerRadioButtonDisabled {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 12px;
+  color: #d6d3d6;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerRadioButtonInnerCircle {
+  border: 1px solid #ababab;
+  background: #ababab;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.stiJsViewerRadioButtonOutCircle {
+  border: 1px solid #ababab;
+  background: #ffffff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.stiJsViewerRadioButtonOutCircleOver {
+  border: 1px solid #a3bde3;
+  background: #d5e1f2;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.stiJsViewerRadioButtonOutCircleDisabled {
+  border: 1px solid #b7b4b7;
+  background: #f7f2f7;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Mouse */
+.stiJsViewerStandartSmallButton {
+  cursor: default;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerStandartSmallButtonDefault {
+  border: 1px solid transparent;
+}
+
+.stiJsViewerStandartSmallButtonOver {
+  background: #d5e1f2;
+  border: 1px solid transparent;
+}
+
+.stiJsViewerStandartSmallButtonSelected {
+  background: #c2d5f2;
+  border: 1px solid transparent;
+}
+
+.stiJsViewerStandartSmallButtonDisabled {
+  color: #d6d3d6;
+  border: 1px solid transparent;
+}
+
+.stiJsViewerTextBoxEditButton {
+  border: 1px solid #ababab;
+  background: #ffffff;
+  border-left: 0px;
+}
+
+/* Mouse */
+.stiJsViewerTextBox {
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px 0px 0px 4px;
+  -webkit-border-radius: 0px;
+  outline: none;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(hsla(0, 0%, 100%, 0)),
+    to(hsla(0, 0%, 100%, 0))
+  );
+  background-image: -webkit-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  background: #ffffff;
+  color: #202020;
+}
+
+.stiJsViewerTextBoxDefault {
+  border: 1px solid #ababab;
+}
+
+.stiJsViewerTextBoxOver {
+  border: 1px solid #a3bde3;
+}
+
+.stiJsViewerTextBoxDisabled {
+  border: 1px solid #b7b4b7;
+  background: #f7f2f7;
+}
+
+.stiJsViewerToolBar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  color: #202020;
+}
+
+.stiJsViewerToolBarSeparated {
+  border-bottom: 1px solid #c6c6c6;
+  background: #ffffff;
+}
+
+.stiJsViewerToolBarTable {
+  cursor: default;
+  font-size: 12px;
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  width: 100%;
+  border-collapse: separate;
+  color: #202020;
+}
+
+.stiJsViewerToolBarSeparator {
+  border: 0;
+  background: #d4d4d4;
+}
+
+.stiJsViewerToolTip {
+  position: absolute;
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  cursor: default;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  z-index: 50;
+  max-width: 250px;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+.stiJsViewerToolTipTextCell {
+  font-size: 12px;
+  font-family: Arial;
+  color: #444444;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #c6c6c6;
+  white-space: normal;
+}
+
+.stiJsViewerNavigatePanel {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+  background: #19478a;
+  font-family: Arial;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.stiJsViewerNavigatePanelSeparator {
+  border-right: 1px dashed #a3b5d0;
+  width: 1px;
+  margin: 0 2px 0 1px;
+}
+
+.stiJsViewerNavigatePanelDisabledPanel {
+  z-index: 101;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background: white;
+  filter: alpha(Opacity=10);
+  opacity: 0;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+}
+
+.stiJsViewerNavigateButton {
+  cursor: default;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiJsViewerNavigateButtonOver {
+  background: #3b629b;
+}
+
+.stiJsViewerNavigateButtonSelected {
+  background: #11315f;
+}
+
+.stiJsViewerNavigateButtonDisabled {
+  color: #d6d3d6;
+}
+
+/* Mouse */
+.stiJsViewerResourceDropDownButton {
+  height: 15px;
+  width: 15px;
+  cursor: default;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerResourceDropDownButtonDefault {
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+
+.stiJsViewerResourceDropDownButtonOver {
+  background: #d5e1f2;
+  border: 1px solid #a3bde3;
+}
+
+.stiJsViewerResourceDropDownButtonSelected {
+  background: #c2d5f2;
+  border: 1px solid #a3bde3;
+}
+
+.stiJsViewerResourceDropDownButtonDisabled {
+  background: transparent;
+  border: 1px solid #b7b4b7;
+}
+
+.stiJsViewerDashboardElementButtonsPanel {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+}
+
+.stiJsViewerFiltersStringText {
+  font-family: Arial;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stiJsViewerDashboardBackPanel {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-family: Arial;
+  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  display: block !important;
+  top: calc(50% - 50px);
+  z-index: 9999;
+  opacity: 0.3;
+  pointer-events: none;
+  transform: rotate(-45deg);
+}
+
+.stiJsViewerDashboardElementButtonsPanel .stiJsViewerStandartSmallButton {
+  margin-left: 2px;
+}
+
+/* Menu Light */
+.stiJsViewerDbsLightMenu {
+  position: absolute;
+  padding: 1px;
+  font-size: 12px;
+  border: 1px solid #ababab;
+  background: #ffffff;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  color: #202020;
+}
+
+.stiJsViewerDbsLightMenuItem {
+  white-space: nowrap;
+  cursor: default;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  color: #202020;
+}
+
+.stiJsViewerDbsLightMenuItemOver,
+.stiJsViewerDbsLightMenuItemSelected {
+  background: #e2e2e2;
+}
+
+.stiJsViewerDbsLightMenuItemDisabled {
+  color: #d6d3d6;
+}
+
+/* Menu Dark */
+.stiJsViewerDbsDarkMenu {
+  position: absolute;
+  padding: 1px;
+  font-size: 12px;
+  border: 1px solid #a0a0a0;
+  background: #2b2b2b;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  color: #dddddd;
+}
+
+.stiJsViewerDbsDarkMenuItem {
+  white-space: nowrap;
+  cursor: default;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  color: #dddddd;
+}
+
+.stiJsViewerDbsDarkMenuItemOver,
+.stiJsViewerDbsDarkMenuItemSelected {
+  background: #414141;
+}
+
+.stiJsViewerDbsDarkMenuItemDisabled {
+  color: #666666;
+}
+
+.stiJsViewerNoResultText {
+  color: #a9a9a9;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.stiJsViewerItemForDragDrop {
+  position: absolute;
+  z-index: 10000;
+  border: 1px solid #ababab;
+  padding: 0px;
+  background: #eeeeee;
+  padding: 6px 12px 6px 12px;
+  color: #444444;
+  cursor: default;
+  font-family: Arial;
+  font-size: 12px;
+  opacity: 0.6;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+/* Filter Container */
+.stiJsViewerFilterContainer {
+  background: #ffffff;
+  border-top: 1px dotted #c6c6c6;
+  overflow: auto;
+}
+
+.stiJsViewerFilterPanelHeader {
+  border-bottom: 1px solid #c6c6c6;
+}
+
+/* Filter Panel */
+.stiJsViewerFilterPanel {
+  border: 1px solid #c6c6c6;
+  background: #ffffff;
+  color: #444444;
+  font-family: Arial;
+  font-size: 12px;
+  margin: 4px;
+  -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+}
+
+/* Opening Icon */
+.stiJsViewerTreeItemIconOpening {
+  margin: 0 3px 0 0;
+}
+
+/* Button */
+.stiJsViewerTreeItem {
+  color: #444444;
+  cursor: default;
+  font-family: Arial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiJsViewerTreeItemOver {
+  background: #d5e1f2;
+  color: #444444;
+  cursor: default;
+  font-family: Arial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.stiJsViewerTreeItemSelected {
+  background: #c2d5f2;
+  color: #444444;
+  cursor: default;
+  font-family: Arial;
+  font-size: 12px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Button Image */
+.stiJsViewerTreeItemImage {
+  border: 0px;
+  padding: 0px;
+  margin: 1px 2px 1px 2px;
+}
+
+/* Button Caption */
+.stiJsViewerTreeItemCaption {
+  margin: 0px;
+  border: 0px;
+  text-align: left;
+  padding: 2px 7px 2px 7px;
+}
+
+.stiJsViewerAuthFormCaption {
+  font-family: Arial;
+  color: #7a8d8e;
+  font-size: 28px;
+}
+
+.stiJsViewerAuthFormHeader {
+  background: #ffffff;
+  font-family: Corbel;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  cursor: default;
+}
+
+.stiJsViewerAuthFormContainer {
+  padding: 5px 10px 0px 10px;
+  background: #ffffff;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.stiJsViewerAuthFormTextCell {
+  white-space: nowrap;
+  color: #444444;
+  cursor: default;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 3px 4px 3px 0;
+}
+
+/* Mouse */
+.stiJsViewerLoginButton {
+  border: none;
+  height: 40px;
+  color: white;
+  cursor: default;
+  font-family: Arial;
+  font-size: 19px;
+  width: 100%;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.stiJsViewerLoginButtonDefault {
+  background: #19478a;
+}
+
+.stiJsViewerLoginButtonOver {
+  background: #3b629b;
+}
+
+.stiJsViewerLoginButtonSelected {
+  background: #11315f;
+}
+
+.stiJsViewerLoginButtonDisabled {
+  background: #3b629b;
+}
+
+.ospHeader {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ospHeader .ospHeaderTitle {
+  height: 20px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ospHeader .ospHeaderTitle svg {
+  cursor: pointer;
+}
+.ospHeader .ospHeaderTitle .title {
+  width: 70px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+}
+.ospHeader .btnContainer {
+  height: 40px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ospHeader .btnContainer .print {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30px;
+  width: 70px;
+  background-color: var(--primary-color, #2796ff);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ospHeader .btnContainer .print .text {
+  color: #ffffff;
+}
+.ospHeader .btnContainer .viewMode {
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ospHeader .btnContainer .viewMode .viewModeText {
+  color: #5f5f5f;
+  font-size: 12px;
+}
+.ospHeader .btnContainer .viewMode .viewModeMenu {
+  display: none;
+  z-index: 45;
+  position: absolute;
+  width: 60px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12);
+}
+.ospHeader .btnContainer .viewMode .viewModeMenu .menuItem {
+  font-size: 12px;
+  display: flex;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.ospHeader .btnContainer .viewMode .viewModeMenu .menuItem:hover {
+  background-color: #ebebeb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.ospHeader .btnContainer .zoomControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80px;
+  margin: 0 4px;
+}
+.ospHeader .btnContainer .zoomControls .zoomNum {
+  font-size: 12px;
+  line-height: 22px;
+}
+.ospHeader .btnContainer .zoomControls .zoomImg {
+  border-radius: 50%;
+  width: 16px;
+  background-color: #f0f0f0;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ospHeader .btnContainer .zoomControls .zoomImg:hover {
+  background-color: var(--primary-color, #2796ff);
+}
+.ospHeader .btnContainer .zoomControls .zoomImg:hover svg g {
+  stroke: #ffffff;
+}
+.ospHeader .text {
+  height: 17px;
+  font-size: 12px;
+}
+.ospReportPanel {
+  top: 42px;
+  bottom: 0px;
+  background-color: #eceff3;
+}
+.ospReportPanel .ospReportPage {
+  border: initial !important;
+}
+.ospViewerNavigatePanel {
+  height: 33px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #eceff3;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ospViewerNavigatePanel .ospViewerNavigateButtonBlock {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.65);
+}
+.ospViewerNavigatePanel .ospViewerNavigateButtonBlock .ospViewerNavigateButton {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.ospViewerNavigatePanel .ospViewerNavigateButtonBlock .ospViewerNavigateNum {
+  display: flex;
+  align-items: center;
+}
