@@ -10,7 +10,9 @@ export default class Designer extends React.Component {
     this.designer = null;
     this.report = null;
   }
-
+  componentWillUnmount() {
+    this.designer.dispatch();
+}
   componentDidMount() {
     OSPPrintDesigner.Base.StiLicense.key =
       "6vJhGtLLLz2GNviWmUTrhSqnOItdDwjBylQzQcAOiHkeCyu4tQ/fHMz14+aX8heK5fPWPOh9GhOJWHXzBWfWkku5KP" +
@@ -32,8 +34,9 @@ export default class Designer extends React.Component {
     let options = new OSPPrintDesigner.Designer.StiDesignerOptions();
     options.ospData = {
       jQuery: $,
+      isActive : function(){return false}
     };
-    options.height = "100%";
+    options.height = "880px";
     options.appearance.showReportTree = true;
     options.appearance.showTooltips = true;
     options.appearance.showTooltipsHelp = false;
